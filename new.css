@@ -24,7 +24,6 @@
 	--nc-d-ac-1: #7928CA;
 	--nc-d-ac-tx: #FFFFFF;
 }
-
 @media (prefers-color-scheme: dark) {
 	:root {
 		--nc-tx: var(--nc-d-tx);
@@ -43,78 +42,145 @@
 	margin: 0;
 	padding: 0;
 }
-
 * + * {
 	margin-top: 1.5rem;
 }
-
 body, input, select, button {
 	font-family: var(--nc-font-sans);
-	font-size: 1rem;
 }
-
 body {
-	overflow-x: hidden;
-	word-break: break-word;
-	overflow-wrap: break-word;
 	background: var(--nc-bg-1);
-
 	color: var(--nc-tx);
 	line-height: 1.5;
 }
-
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.125;
 	margin-top: 2rem;
-	margin-bottom: 0;
 }
-
 h1 {
 	font-size: 2rem;
 }
-
 h2 {
 	font-size: 1.5rem;
 }
-
 h3 {
 	font-size: 1.25rem;
 }
-
 h4 {
 	font-size: 1rem;
 }
-
 h5 {
 	font-size: .875rem;
 }
-
 h6 {
 	font-size: .75rem;
 }
-
 a {
 	color: var(--nc-lk-1);
 }
-
 a:hover {
 	color: var(--nc-lk-2);
 }
-
+img, video {
+	max-width: 100%;
+}
 abbr {
 	cursor: help;
 	border-bottom: 1px dotted var(--nc-bg-3);
 }
-
 blockquote {
 	padding: .5rem 0 .5rem 1.5rem;
 	border-left: .25rem solid var(--nc-bg-3);
 }
+hr {
+	border: 0;
+	border-bottom: 1px solid var(--nc-bg-3);
+}
 
+/* Code */
+code,
+kbd,
+pre {
+	background: var(--nc-bg-2);
+	border-radius: .25rem;
+	padding: .125rem .25rem;
+	font-family: var(--nc-font-mono);
+	font-size: .875rem;
+}
+kbd {
+	border-bottom: .125rem solid var(--nc-bg-3);
+}
+pre {
+	padding: 1.5rem;
+	border-radius: 0;
+	overflow: auto;
+}
+pre code {
+	padding: 0;
+}
+
+/* Details */
+details {
+	padding: .5rem 1rem;
+	background: var(--nc-bg-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: .25rem;
+}
+summary {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/* Table */
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+table caption {
+	margin-bottom: .5rem;
+}
+td,
+th {
+	border: 1px solid var(--nc-bg-3);
+	text-align: left;
+	padding: .5rem;
+}
+th {
+	background: var(--nc-bg-2);
+}
+
+/* Lists */
+ol,
+ul {
+	padding-left: 1.5rem;
+}
+li {
+	margin-top: 0;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	padding-left: 1.5em;
+}
+
+/* Forms */
+textarea,
+select,
+input {
+	padding: .5rem .75rem;
+	background: var(--nc-bg-2);
+	border: 1px solid var(--nc-bg-3);
+	border-radius: .25rem;
+	font-size: 1rem;
+	color: var(--nc-tx);
+}
+textarea {
+	max-width: 100%;
+}
 button,
 input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+input[type="reset"] {
 	font-size: 1rem;
 	display: inline-block;
 	padding: .5rem .875rem;
@@ -128,156 +194,14 @@ input[type="button"] {
 	box-sizing: border-box;
 	cursor: pointer;
 }
-
 button:hover,
 input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover {
+input[type="reset"]:hover {
 	opacity: .875;
 }
-
 button[disabled],
 input[type="submit"][disabled],
-input[type="reset"][disabled],
-input[type="button"][disabled] {
+input[type="reset"][disabled] {
 	opacity: .5;
 	cursor: not-allowed;
-}
-
-code,
-samp,
-kbd,
-pre {
-	background: var(--nc-bg-2);
-	border-radius: .25rem;
-	padding: .125rem .25rem;
-	font-family: var(--nc-font-mono);
-	font-size: .875rem;
-}
-
-kbd {
-	border-bottom: .125rem solid var(--nc-bg-3);
-}
-
-pre {
-	padding: 1.5rem;
-	border-radius: 0;
-	overflow: auto;
-}
-
-pre code {
-	/* When <code> is in a <pre>, reset it's formatting to blend in */
-	padding: 0;
-}
-
-details {
-	/* Make the <details> look more "clickable" */
-	padding: .6rem 1rem;
-	background: var(--nc-bg-2);
-	border: 1px solid var(--nc-bg-3);
-	border-radius: 4px;
-}
-
-summary {
-	/* Makes the <summary> look more like a "clickable" link with the pointer cursor */
-	cursor: pointer;
-	font-weight: bold;
-}
-
-details[open] {
-	/* Adjust the <details> padding while open */
-	padding-bottom: .75rem;
-}
-
-details[open] summary {
-	/* Adjust the <details> padding while open */
-	margin-bottom: 6px;
-}
-
-details[open]>*:last-child {
-	/* Resets the bottom margin of the last element in the <details> while <details> is opened. This prevents double margins/paddings. */
-	margin-bottom: 0;
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd::before {
-	/* Add an arrow to data table definitions */
-	content: '→ ';
-}
-
-hr {
-	/* Reset the border of the <hr> separator, then set a better line */
-	border: 0;
-	border-bottom: 1px solid var(--nc-bg-3);
-	margin: 1rem auto;
-}
-
-fieldset {
-	margin-top: 1rem;
-	padding: 2rem;
-	border: 1px solid var(--nc-bg-3);
-	border-radius: 4px;
-}
-
-legend {
-	padding: auto .5rem;
-}
-
-table {
-	/* border-collapse sets the table's elements to share borders, rather than floating as separate "boxes". */
-	border-collapse: collapse;
-	width: 100%
-}
-
-td,
-th {
-	border: 1px solid var(--nc-bg-3);
-	text-align: left;
-	padding: .5rem;
-}
-
-th {
-	background: var(--nc-bg-2);
-}
-
-tr:nth-child(even) {
-	/* Set every other cell slightly darker. Improves readability. */
-	background: var(--nc-bg-2);
-}
-
-table caption {
-	font-weight: bold;
-	margin-bottom: .5rem;
-}
-
-textarea {
-	/* Don't let the <textarea> extend off the screen naturally or when dragged by the user */
-	max-width: 100%;
-}
-
-ol,
-ul {
-	padding-left: 1.5rem;
-}
-
-li {
-	margin-top: 0;
-}
-
-textarea,
-select,
-input {
-	padding: .5rem .75rem;
-	background: var(--nc-bg-2);
-	color: var(--nc-tx);
-	border: 1px solid var(--nc-bg-3);
-	border-radius: .25rem;
-	box-shadow: none;
-}
-
-img {
-	max-width: 100%;
 }
