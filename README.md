@@ -15,7 +15,7 @@ Features:
 Add this line to the end of your HTML's `<head>`:
 
 ```html
-<link rel="stylesheet" href="link/to/bamboo.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo@1.0.0/bamboo.min.css">
 ```
 
 ## Special Thanks
