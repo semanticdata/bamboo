@@ -19,7 +19,7 @@
 	--nc-d-bg-2: #3B4252;
 	--nc-d-bg-3: #4C566A;
 	--nc-d-lk-1: #EBCB8B;
-	--nc-d-lk-2: #0070F3;
+	--nc-d-lk-2: #D08770;
 	--nc-d-lk-tx: #FFFFFF;
 	--nc-d-ac-1: #7928CA;
 	--nc-d-ac-tx: #FFFFFF;
@@ -216,55 +216,29 @@ input[type="button"]:enabled:hover {
 }
 
 code,
-pre,
-kbd,
-samp {
-	/* Set the font family for monospaced elements */
-	font-family: var(--nc-font-mono);
-}
-
-code,
 samp,
 kbd,
 pre {
-	/* The main preformatted style. This is changed slightly across different cases. */
 	background: var(--nc-bg-2);
-	border-radius: 4px;
-	padding: 3px 6px;
-	/* ↓ font-size is relative to containing element, so it scales for titles*/
-	font-size: 0.9em;
+	border-radius: .25rem;
+	padding: .25rem .5rem;
+	font-family: var(--nc-font-mono);
+	font-size: .875rem;
 }
 
 kbd {
-	/* Makes the kbd element look like a keyboard key */
-	border-bottom: 3px solid var(--nc-bg-3);
+	border-bottom: .125rem solid var(--nc-bg-3);
 }
 
 pre {
-	padding: 1rem 1.4rem;
-	max-width: 100%;
+	padding: 1.5rem;
+	border-radius: 0;
 	overflow: auto;
 }
 
 pre code {
 	/* When <code> is in a <pre>, reset it's formatting to blend in */
-	background: inherit;
-	font-size: inherit;
-	color: inherit;
-	border: 0;
 	padding: 0;
-	margin: 0;
-}
-
-code pre {
-	/* When <pre> is in a <code>, reset it's formatting to blend in */
-	display: inline;
-	background: inherit;
-	font-size: inherit;
-	color: inherit;
-	border: 0;
-	padding: 0;
-	margin: 0;
 }
 
 details {
