@@ -3,8 +3,7 @@
 	--nc-font-mono: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
 
 	/* Light theme */
-	--nc-tx-1: #000000;
-	--nc-tx-2: #1A1A1A;
+	--nc-tx: #1A1A1A;
 	--nc-bg-1: #FFFFFF;
 	--nc-bg-2: #F6F8FA;
 	--nc-bg-3: #E5E7EB;
@@ -15,8 +14,7 @@
 	--nc-ac-tx: #0C4047;
 
 	/* Dark theme */
-	--nc-d-tx-1: #ECEFF4;
-	--nc-d-tx-2: #E5E9F0;
+	--nc-d-tx: #ECEFF4;
 	--nc-d-bg-1: #2E3440;
 	--nc-d-bg-2: #3B4252;
 	--nc-d-bg-3: #4C566A;
@@ -29,8 +27,7 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--nc-tx-1: var(--nc-d-tx-1);
-		--nc-tx-2: var(--nc-d-tx-2);
+		--nc-tx: var(--nc-d-tx);
 		--nc-bg-1: var(--nc-d-bg-1);
 		--nc-bg-2: var(--nc-d-bg-2);
 		--nc-bg-3: var(--nc-d-bg-3);
@@ -94,7 +91,7 @@ body {
 	background: var(--nc-bg-1);
 
 	/* Main body text */
-	color: var(--nc-tx-2);
+	color: var(--nc-tx);
 	line-height: 1.5;
 }
 
@@ -106,14 +103,12 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	line-height: 1.125;
-	color: var(--nc-tx-1);
 	padding-top: .875rem;
 }
 
 h1,
 h2,
 h3 {
-	color: var(--nc-tx-1);
 	padding-bottom: 2px;
 	margin-bottom: 8px;
 }
@@ -389,7 +384,7 @@ input {
 	padding: 6px 12px;
 	margin-bottom: .5rem;
 	background: var(--nc-bg-2);
-	color: var(--nc-tx-2);
+	color: var(--nc-tx);
 	border: 1px solid var(--nc-bg-3);
 	border-radius: 4px;
 	box-shadow: none;
