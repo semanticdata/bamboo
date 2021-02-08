@@ -10,7 +10,7 @@ All it does is set some sensible defaults and styles your HTML to look reasonabl
 - Rendering markdown-generated HTML
 - Creating demos.
 
-**[Demo](https://rilwis.github.io/bamboo)**
+**[Demo](https://rilwis.github.io/bamboo/demo.html)**
 
 ## Usage
 
