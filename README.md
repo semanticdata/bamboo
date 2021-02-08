@@ -8,6 +8,8 @@ Features:
 - Consistent styling across browsers thanks to normalize.css
 - Support light and dark theme (automatically detect the OS mode and switch)
 
+Supported in modern browsers. No IE, sorry!
+
 **[Demo](https://rilwis.github.io/bamboo/demo.html)**
 
 ## Usage
@@ -18,6 +20,7 @@ Add this line to the end of your HTML's `<head>`:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo@1.0.0/bamboo.min.css">
 ```
 
-## Special Thanks
+## Credits
 - [new.css](https://github.com/xz/new.css): Bamboo is a fork of new.css
 - [normalize.css](https://github.com/necolas/normalize.css/)
+- [Nord theme](https://www.nordtheme.com) for color schemes

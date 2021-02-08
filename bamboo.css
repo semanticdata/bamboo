@@ -40,11 +40,15 @@
 * + * {
 	margin-top: 1.5rem;
 }
-body {
+html {
 	background: var(--b-bg-1);
 	font-family: var(--b-font-sans);
+	-webkit-text-size-adjust: 100%;  /* Prevent adjustments of font size after orientation changes in iOS. */
 	line-height: 1.5;
 	color: var(--b-txt);
+	-moz-tab-size: 4;
+	tab-size: 4;
+	word-break: break-word;
 }
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.125;
