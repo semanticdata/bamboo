@@ -1,6 +1,6 @@
 # Bamboo CSS
 
-A classless CSS framework to write modern websites using only HTML. It weighs **3.3KB** (unzipped).
+A classless CSS framework to write modern websites using only HTML. It weighs **1.52KB** (gzipped).
 
 Features:
 
