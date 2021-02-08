@@ -2,13 +2,11 @@
 
 A classless CSS framework to write modern websites using only HTML. It weighs **3.3KB** (unzipped).
 
-All it does is set some sensible defaults and styles your HTML to look reasonable. It's perfect for:
+Features:
 
-- A dead-simple blog
-- Collecting your most used links
-- Making a simple "about me" site
-- Rendering markdown-generated HTML
-- Creating demos.
+- Drop in to use, no configuration, no CSS classes
+- Consistent styling across browsers thanks to normalize.css
+- Support light and dark theme (automatically detect the OS mode and switch)
 
 **[Demo](https://rilwis.github.io/bamboo/demo.html)**
 
