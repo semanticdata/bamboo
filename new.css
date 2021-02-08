@@ -20,7 +20,7 @@
 	--nc-d-bg-3: #4C566A;
 	--nc-d-lk-1: #EBCB8B;
 	--nc-d-lk-2: #D08770;
-	--nc-d-lk-tx: #FFFFFF;
+	--nc-d-lk-tx: #2E3440;
 	--nc-d-ac-1: #7928CA;
 	--nc-d-ac-tx: #FFFFFF;
 }
@@ -33,7 +33,7 @@
 		--nc-bg-3: var(--nc-d-bg-3);
 		--nc-lk-1: var(--nc-d-lk-1);
 		--nc-lk-2: var(--nc-d-lk-2);
-		--nc-lk-tx: var(--nc--dlk-tx);
+		--nc-lk-tx: var(--nc-d-lk-tx);
 		--nc-ac-1: var(--nc-d-ac-1);
 		--nc-ac-tx: var(--nc--dac-tx);
 	}
@@ -152,7 +152,6 @@ a:hover {
 }
 
 abbr:hover {
-	/* Set the '?' cursor while hovering an abbreviation */
 	cursor: help;
 }
 
@@ -177,17 +176,16 @@ input[type="reset"],
 input[type="button"] {
 	font-size: 1rem;
 	display: inline-block;
-	padding: 6px 12px;
+	padding: .5rem .875rem;
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
 	background: var(--nc-lk-1);
 	color: var(--nc-lk-tx);
 	border: 0;
-	border-radius: 4px;
+	border-radius: .25rem;
 	box-sizing: border-box;
 	cursor: pointer;
-	color: var(--nc-lk-tx);
 }
 
 a button[disabled],
@@ -195,7 +193,6 @@ button[disabled],
 input[type="submit"][disabled],
 input[type="reset"][disabled],
 input[type="button"][disabled] {
-	cursor: default;
 	opacity: .5;
 
 	/* Set the [X] cursor while hovering a disabled link */
@@ -212,7 +209,7 @@ input[type="reset"]:focus,
 input[type="reset"]:enabled:hover,
 input[type="button"]:focus,
 input[type="button"]:enabled:hover {
-	background: var(--nc-lk-2);
+	opacity: .875;
 }
 
 code,
