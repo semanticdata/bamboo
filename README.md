@@ -9,7 +9,7 @@ It's very useful when you need:
 
 Bamboo CSS uses [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css) to ensure consistent styling across browsers (with no IE support). When using Bamboo CSS, you don't need to include `normalize.css` or `sanitize.css` anymore.
 
-Bamboo CSS is very lightweight, only **1.52KB** gzipped.
+Bamboo CSS is very lightweight, only **1.7KB** gzipped.
 
 **[Demo](https://rilwis.github.io/bamboo/demo.html)**
 
@@ -25,7 +25,7 @@ Bamboo CSS is very lightweight, only **1.52KB** gzipped.
 Add this line to the end of your HTML's `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo@1/bamboo.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo@1.1.0/bamboo.min.css">
 ```
 
 ## Credits
