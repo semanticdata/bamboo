@@ -1,16 +1,24 @@
 # Bamboo CSS
 
-A classless CSS framework to write modern websites using only HTML. It weighs **1.52KB** (gzipped).
+A classless CSS utility for your HTML, which adds default styling for all HTML elements.
 
-Features:
+It's very useful when you need:
 
-- Drop in to use, no configuration, no CSS classes
-- Consistent styling across browsers thanks to normalize.css
-- Support light and dark theme (automatically detect the OS mode and switch)
+- A quick HTML/React/Vue demo without spending time styling elements
+- A base style for your blog/website
 
-Supported in modern browsers. No IE, sorry!
+Bamboo CSS uses [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css) to ensure consistent styling across browsers (with no IE support). When using Bamboo CSS, you don't need to include `normalize.css` or `sanitize.css` anymore.
+
+Bamboo CSS is very lightweight, only **1.52KB** gzipped.
 
 **[Demo](https://rilwis.github.io/bamboo/demo.html)**
+
+## Features:
+
+- Drop in to use, no configuration, no CSS classes
+- Consistent styling across browsers thanks to `normalize.css` and `sanitize.css`
+- Support light and dark themes (automatically detect the OS mode and switch)
+- Lightweight
 
 ## Usage
 
@@ -22,5 +30,5 @@ Add this line to the end of your HTML's `<head>`:
 
 ## Credits
 - [new.css](https://github.com/xz/new.css): Bamboo is a fork of new.css
-- [normalize.css](https://github.com/necolas/normalize.css/)
+- [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css)
 - [Nord theme](https://www.nordtheme.com) for color schemes
