@@ -32,7 +32,7 @@
 	}
 }
 
-* {
+*, ::before, ::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -43,12 +43,13 @@
 html {
 	background: var(--b-bg-1);
 	font-family: var(--b-font-sans);
-	-webkit-text-size-adjust: 100%;  /* Prevent adjustments of font size after orientation changes in iOS. */
 	line-height: 1.5;
 	color: var(--b-txt);
 	-moz-tab-size: 4;
 	tab-size: 4;
 	word-break: break-word;
+	-webkit-tap-highlight-color: transparent; /* Remove the grey highlight on links in iOS */
+	-webkit-text-size-adjust: 100%;  /* Prevent adjustments of font size after orientation changes in iOS. */
 }
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.125;
@@ -82,15 +83,14 @@ img, video, iframe {
 	max-width: 100%;
 	height: auto;
 }
+iframe {
+	border-style: none;
+}
 
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
+/* Add the correct text decoration in Safari. */
 abbr[title] {
-	border-bottom: none; /* 1 */
-	text-decoration: underline; /* 2 */
-	text-decoration: underline dotted; /* 2 */
+	text-decoration: underline;
+	text-decoration: underline dotted;
 }
 blockquote {
 	padding: .5rem 0 .5rem 1.5rem;
@@ -115,14 +115,9 @@ sup {
 	top: -.5em;
 }
 
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 hr {
-	box-sizing: content-box; /* 1 */
-	height: 0; /* 1 */
-	overflow: visible; /* 2 */
+	height: 0; /* Add the correct box sizing in Firefox. */
+	overflow: visible; /* Show the overflow in Edge and IE. */
 
 	border: 0;
 	border-bottom: 1px solid var(--b-bg-3);
@@ -169,6 +164,7 @@ summary {
 table {
 	border-collapse: collapse;
 	width: 100%;
+	text-indent: 0; /* Remove text indentation from table contents in Chrome, Edge, and Safari. */
 }
 table caption {
 	margin-bottom: .5rem;
@@ -206,6 +202,7 @@ select,
 textarea {
 	margin: 0;
 	padding: .5rem .75rem;
+	max-width: 100%;
 	background: var(--b-bg-2);
 	border: 1px solid var(--b-bg-3);
 	border-radius: .25rem;
@@ -225,15 +222,17 @@ select {
 		background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M5 6l5 5 5-5 2 1-7 7-7-7 2-1z" fill="#ECEFF4"/%3E%3C/svg%3E');
 	}
 }
+textarea {
+	resize: vertical;
+}
 
 button,
-[type="button"],
-[type="submit"],
-[type="reset"] {
+[type="button" i],
+[type="submit" i],
+[type="reset" i] {
 	-webkit-appearance: button;
 	display: inline-block;
 	text-align: center;
-	text-decoration: none;
 	white-space: nowrap;
 	background: var(--b-lk-1);
 	color: var(--b-btn-txt);
@@ -241,40 +240,46 @@ button,
 	cursor: pointer;
 }
 button:hover,
-[type="button"]:hover,
-[type="submit"]:hover,
-[type="reset"]:hover {
+[type="button" i]:hover,
+[type="submit" i]:hover,
+[type="reset" i]:hover {
 	opacity: .875;
 }
 button[disabled],
-[type="button"][disabled],
-[type="submit"][disabled],
-[type="reset"][disabled] {
+[type="button" i][disabled],
+[type="submit" i][disabled],
+[type="reset" i][disabled] {
 	opacity: .5;
-	cursor: not-allowed;
 }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-	height: auto;
+/* Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress {
+	vertical-align: baseline;
 }
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type="search" i] {
 	-webkit-appearance: textfield; /* 1 */
 	outline-offset: -2px; /* 2 */
 }
 
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type="search"]::-webkit-search-decoration {
+/* Correct the cursor style of increment and decrement buttons in Chrome. */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/* Correct the text style of placeholders in Chrome, Edge, and Safari. */
+::-webkit-input-placeholder {
+	color: inherit;
+	opacity: .5;
+}
+
+/* Remove the inner padding in Chrome and Safari on macOS. */
+::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
 
@@ -285,4 +290,32 @@ button[disabled],
 ::-webkit-file-upload-button {
 	-webkit-appearance: button; /* 1 */
 	font: inherit; /* 2 */
+}
+
+/* Remove the inner border and padding of focus outlines in Firefox. */
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/* Restore the focus outline styles unset by the previous rule in Firefox. */
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/* Remove the additional :invalid styles in Firefox. */
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+/* Accessibility */
+[aria-busy="true" i] {
+	cursor: progress;
+}
+[aria-controls] {
+	cursor: pointer;
+}
+[aria-disabled="true" i],
+[disabled] {
+	cursor: not-allowed;
 }
