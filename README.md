@@ -24,8 +24,12 @@ Bamboo CSS is very lightweight, only **1.7KB** gzipped.
 
 ### CDN
 
+Use any of the link below:
+
 ```html
-<link href="https://unpkg.com/bamboo.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo/bamboo.min.css">
 ```
 
 ### NPM
