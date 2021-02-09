@@ -2,6 +2,7 @@
   "name": "bamboo.css",
   "version": "1.1.0",
   "description": "A classless CSS utility for your HTML",
+  "main": "bamboo.css",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rilwis/bamboo.git"
