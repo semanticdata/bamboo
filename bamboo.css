@@ -181,17 +181,15 @@ th {
 
 /* Lists */
 ol,
-ul {
-	padding-left: 1.5rem;
+ul
+dd {
+	padding-left: 2rem;
 }
 li {
 	margin-top: 0;
 }
 dt {
 	font-weight: bold;
-}
-dd {
-	padding-left: 1.5em;
 }
 
 /* Forms */
