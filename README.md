@@ -17,7 +17,7 @@ Supported in modern browsers. No IE, sorry!
 Add this line to the end of your HTML's `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo@1.0.0/bamboo.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo@1/bamboo.min.css">
 ```
 
 ## Credits
