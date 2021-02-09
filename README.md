@@ -22,11 +22,21 @@ Bamboo CSS is very lightweight, only **1.7KB** gzipped.
 
 ## Usage
 
-Add this line to the end of your HTML's `<head>`:
+### CDN
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo@1.1.0/bamboo.min.css">
 ```
+
+### NPM
+
+```bash
+npm install --save bamboo.css
+```
+
+### Download
+
+See [https://rilwis.github.io/bamboo/bamboo.css](https://rilwis.github.io/bamboo/bamboo.css)
 
 ## Credits
 - [new.css](https://github.com/xz/new.css): Bamboo is a fork of new.css
