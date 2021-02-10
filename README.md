@@ -13,7 +13,7 @@ Bamboo CSS uses CSS variables for theming, allowing to dynamically change the th
 
 All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any CSS framework without conflicts.
 
-Bamboo CSS is very lightweight, only **1.8KB** (minified and gzipped).
+Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 
 **[Demo](https://rilwis.github.io/bamboo/demo.html)**
 
