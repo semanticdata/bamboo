@@ -121,15 +121,13 @@ hr {
 code,
 kbd,
 samp,
+var,
 pre {
 	background: var(--b-bg-2);
 	border-radius: .25rem;
 	padding: .125rem .25rem;
 	font-family: var(--b-font-mono);
 	font-size: .875rem;
-}
-kbd {
-	border-bottom: .125rem solid var(--b-line);
 }
 pre {
 	padding: 1.5rem;
