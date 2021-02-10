@@ -215,7 +215,11 @@ select:not([multiple]):not([size]) {
 	}
 }
 textarea {
+	width: 100%;
 	resize: vertical;
+}
+textarea:not([rows]) {
+	height: 8rem;
 }
 
 button,
