@@ -208,14 +208,14 @@ textarea {
 	color: var(--b-txt);
 }
 select {
-	background: var(--b-bg-2) url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M5 6l5 5 5-5 2 1-7 7-7-7 2-1z" fill="#2E3440"/%3E%3C/svg%3E') no-repeat right .5rem center;
+	background: var(--b-bg-2) url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#2E3440"><path d="M5 6l5 5 5-5 2 1-7 7-7-7 2-1z"/></svg>') no-repeat right .5rem center;
 	-moz-appearance: none; 
 	-webkit-appearance: none; 
 	appearance: none;
 }
 @media (prefers-color-scheme: dark) {
 	select {
-		background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M5 6l5 5 5-5 2 1-7 7-7-7 2-1z" fill="#ECEFF4"/%3E%3C/svg%3E');
+		background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#ECEFF4"><path d="M5 6l5 5 5-5 2 1-7 7-7-7 2-1z"/></svg>');
 	}
 }
 textarea {
