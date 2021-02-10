@@ -7,16 +7,14 @@
 	--b-bg-1: #FFFFFF;
 	--b-bg-2: #ECEFF4;
 	--b-line: #D8DEE9;
-	--b-lk-1: #D08770;
-	--b-lk-2: #EBCB8B;
+	--b-accent: #BF616A;
 
 	/* Dark theme */
 	--b-d-txt: #ECEFF4;
 	--b-d-bg-1: #2E3440;
 	--b-d-bg-2: #3B4252;
 	--b-d-bg-3: #4C566A;
-	--b-d-lk-1: #EBCB8B;
-	--b-d-lk-2: #D08770;
+	--b-d-accent: #EBCB8B;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
@@ -24,8 +22,7 @@
 		--b-bg-1: var(--b-d-bg-1);
 		--b-bg-2: var(--b-d-bg-2);
 		--b-line: var(--b-d-bg-3);
-		--b-lk-1: var(--b-d-lk-1);
-		--b-lk-2: var(--b-d-lk-2);
+		--b-accent: var(--b-d-accent);
 	}
 }
 
@@ -77,10 +74,11 @@ h6 {
 	font-size: .75rem;
 }
 a {
-	color: var(--b-lk-1);
+	color: var(--b-accent);
+	text-decoration: none;
 }
 a:hover {
-	color: var(--b-lk-2);
+	text-decoration: underline;
 }
 img, video, iframe {
 	max-width: 100%;
@@ -235,7 +233,7 @@ button,
 	display: inline-block;
 	text-align: center;
 	white-space: nowrap;
-	background: var(--b-lk-1);
+	background: var(--b-accent);
 	color: var(--b-bg-1);
 	border: 0;
 	cursor: pointer;
