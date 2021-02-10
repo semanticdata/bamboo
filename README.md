@@ -7,9 +7,13 @@ It's very useful when you need:
 - A quick HTML/React/Vue demo without spending time styling elements
 - A base style for your blog/website
 
-Bamboo CSS uses [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css) to ensure consistent styling across browsers (with no IE support). When using Bamboo CSS, you don't need to include `normalize.css` or `sanitize.css` anymore.
+Bamboo CSS uses [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css) to ensure consistent styling across browsers (no IE support). When using Bamboo CSS, you don't need to include `normalize.css` or `sanitize.css` anymore.
 
-Bamboo CSS is very lightweight, only **1.7KB** gzipped.
+Bamboo CSS uses CSS variables for theming, allowing to dynamically change the theme if you want. By default, it provides 2 themes for light and dark modes. The theme is automatically switched based on the system mode.
+
+All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any CSS framework without conflicts.
+
+Bamboo CSS is very lightweight, only **2.13KB** gzipped.
 
 **[Demo](https://rilwis.github.io/bamboo/demo.html)**
 
@@ -17,7 +21,9 @@ Bamboo CSS is very lightweight, only **1.7KB** gzipped.
 
 - Drop in to use, no configuration, no CSS classes
 - Consistent styling across browsers thanks to `normalize.css` and `sanitize.css`
-- Support light and dark themes (automatically detect the OS mode and switch)
+- Supports light and dark themes (automatically detect the OS mode and switch)
+- Uses CSS variables (scoped with prefix `--b-`)
+- Compatible with other CSS frameworks
 - Lightweight
 
 ## Usage
