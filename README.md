@@ -35,7 +35,7 @@ Use any of the link below:
 ```html
 <link rel="stylesheet" href="https://unpkg.com/bamboo.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo/bamboo.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo@1.2.1/bamboo.min.css">
 ```
 
 ### NPM
