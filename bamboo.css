@@ -40,6 +40,7 @@
 html {
 	background: var(--b-bg-1);
 	font-family: var(--b-font-main);
+	text-rendering: optimizeSpeed;
 	line-height: 1.5;
 	color: var(--b-txt);
 	-moz-tab-size: 4;
@@ -47,6 +48,9 @@ html {
 	word-break: break-word;
 	-webkit-tap-highlight-color: transparent; /* Remove the grey highlight on links in iOS */
 	-webkit-text-size-adjust: 100%;  /* Prevent adjustments of font size after orientation changes in iOS. */
+}
+html:focus-within {
+	scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.125;
@@ -202,8 +206,7 @@ textarea {
 	background: var(--b-bg-2);
 	border: 1px solid var(--b-line);
 	border-radius: .25rem;
-	font-family: inherit;
-	font-size: 1rem;
+	font: inherit;
 	line-height: 1.125;
 	color: var(--b-txt);
 }
@@ -314,4 +317,21 @@ progress {
 [aria-disabled="true" i],
 [disabled] {
 	cursor: not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+	*,
+	::before,
+	::after {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-delay: 0 !important;
+		transition-duration: 0 !important;
+	}
 }
