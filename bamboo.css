@@ -234,12 +234,13 @@ button,
 	color: var(--b-btn-txt);
 	border: 0;
 	cursor: pointer;
+	transition: opacity .25s;
 }
 button:hover,
 [type="button" i]:hover,
 [type="submit" i]:hover,
 [type="reset" i]:hover {
-	opacity: .875;
+	opacity: .75;
 }
 button[disabled],
 [type="button" i][disabled],
