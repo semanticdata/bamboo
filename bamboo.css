@@ -178,10 +178,11 @@ th {
 
 /* Lists */
 ol,
-ul
+ul,
 dd {
 	padding-left: 2rem;
 }
+dd,
 li {
 	margin-top: 0;
 }
