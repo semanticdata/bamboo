@@ -160,13 +160,15 @@ table {
 table caption {
 	margin-bottom: .5rem;
 }
+tr {
+	border-bottom: 1px solid var(--b-line);	
+}
 td,
 th {
-	border: 1px solid var(--b-line);
-	padding: .5rem;
+	padding: .5rem 0;
 }
 th {
-	background: var(--b-bg-2);
+	text-align: left;
 }
 
 /* Lists */
