@@ -37,7 +37,13 @@
 * + * {
 	margin-top: 1.5rem;
 }
-html {
+html:focus-within {
+	scroll-behavior: smooth;
+}
+body {
+	max-width: 70ch;
+	padding: 1rem;
+	margin: auto;
 	background: var(--b-bg-1);
 	font-family: var(--b-font-main);
 	text-rendering: optimizeSpeed;
@@ -49,12 +55,8 @@ html {
 	-webkit-tap-highlight-color: transparent; /* Remove the grey highlight on links in iOS */
 	-webkit-text-size-adjust: 100%;  /* Prevent adjustments of font size after orientation changes in iOS. */
 }
-html:focus-within {
-	scroll-behavior: smooth;
-}
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.125;
-	margin-top: 2rem;
 }
 h1 {
 	font-size: 2rem;

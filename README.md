@@ -23,6 +23,7 @@ Bamboo CSS is very lightweight, only **1.8KB** gzipped.
 - Consistent styling across browsers thanks to `normalize.css` and `sanitize.css`
 - Supports light and dark themes (automatically detect the OS mode and switch)
 - Uses CSS variables (scoped with prefix `--b-`)
+- Uses `rem`
 - Compatible with other CSS frameworks
 - Lightweight
 
