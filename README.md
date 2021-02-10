@@ -46,7 +46,7 @@ npm install --save bamboo.css
 
 ### Download
 
-See [https://rilwis.github.io/bamboo/bamboo.css](https://rilwis.github.io/bamboo/bamboo.css)
+See [https://rilwis.github.io/bamboo/bamboo.min.css](https://rilwis.github.io/bamboo/bamboo.min.css)
 
 ## Credits
 - [new.css](https://github.com/xz/new.css): Bamboo is a fork of new.css

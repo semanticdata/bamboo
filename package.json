@@ -1,23 +1,31 @@
 {
-  "name": "bamboo.css",
-  "version": "1.2.0",
-  "description": "A classless CSS utility for your HTML",
-  "main": "bamboo.css",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rilwis/bamboo.git"
-  },
-  "keywords": [
-    "css",
-    "html",
-    "sanitize",
-    "normalize",
-    "style"
-  ],
-  "author": "Anh Tran <rilwis@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rilwis/bamboo/issues"
-  },
-  "homepage": "https://github.com/rilwis/bamboo"
+	"name": "bamboo.css",
+	"version": "1.2.0",
+	"description": "A classless CSS utility for your HTML",
+	"main": "bamboo.min.css",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rilwis/bamboo.git"
+	},
+	"keywords": [
+		"css",
+		"html",
+		"sanitize",
+		"normalize",
+		"style"
+	],
+	"author": "Anh Tran <rilwis@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/rilwis/bamboo/issues"
+	},
+	"homepage": "https://github.com/rilwis/bamboo",
+	"devDependencies": {
+		"cssnano": "^4.1.10",
+		"postcss": "^8.2.5",
+		"postcss-cli": "^8.3.1"
+	},
+	"scripts": {
+		"start": "postcss bamboo.css > bamboo.min.css"
+	}
 }
