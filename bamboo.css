@@ -40,11 +40,11 @@ body {
 	-webkit-tap-highlight-color: transparent; /* Remove the grey highlight on links in iOS */
 	-webkit-text-size-adjust: 100%;  /* Prevent adjustments of font size after orientation changes in iOS. */
 }
-h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote, pre, figure, dl, dd, table, address, hr, fieldset {
-	margin: 0 0 1.5em;
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, details, blockquote, pre, figure, table, address, hr, fieldset, progress, iframe, audio, video {
+	margin: 0 0 1.5rem;
 }
 h1, h2, h3, h4, h5, h6 {
-	line-height: 1.125;
+	line-height: 1.25;
 }
 h1 {
 	font-size: 2rem;
@@ -175,10 +175,7 @@ nav ul {
 	padding: 0;
 	margin: 0;
 }
-ul {
-	padding-left: 2rem;
-}
-ol {
+ul, ol, dd {
 	padding-left: 2rem;
 }
 li > ul,
