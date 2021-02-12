@@ -19,7 +19,9 @@
 	}
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
 	box-sizing: border-box;
 }
 html:focus-within {
@@ -40,10 +42,37 @@ body {
 	-webkit-tap-highlight-color: transparent; /* Remove the grey highlight on links in iOS */
 	-webkit-text-size-adjust: 100%;  /* Prevent adjustments of font size after orientation changes in iOS. */
 }
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, details, blockquote, pre, figure, table, address, hr, fieldset, progress, iframe, audio, video {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+details,
+blockquote,
+pre,
+figure,
+table,
+address,
+hr,
+fieldset,
+progress,
+iframe,
+audio,
+video {
 	margin: 0 0 1.5rem;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	line-height: 1.25;
 }
 h1 {
@@ -71,11 +100,15 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-img, video, svg {
+img,
+video,
+svg {
 	max-width: 100%;
 	height: auto;
 }
-embed, iframe, object {
+embed,
+iframe,
+object {
 	max-width: 100%;
 }
 iframe {
@@ -120,7 +153,12 @@ hr {
 }
 
 /* Code */
-pre, code, kbd, samp, tt, var {
+pre,
+code,
+kbd,
+samp,
+tt,
+var {
 	background: var(--b-bg-2);
 	border-radius: .25rem;
 	padding: .125rem .25rem;
@@ -177,7 +215,9 @@ nav ul {
 	padding: 0;
 	margin: 0;
 }
-ul, ol, dd {
+ul,
+ol,
+dd {
 	padding-left: 2rem;
 }
 li > ul,
