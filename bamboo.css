@@ -196,7 +196,6 @@ legend {
 }
 button,
 input,
-optgroup,
 select,
 textarea {
 	margin: 0;
@@ -208,6 +207,11 @@ textarea {
 	font: inherit;
 	line-height: 1.125;
 	color: var(--b-txt);
+}
+select,
+input:not([size]):not([type="button" i]):not([type="submit" i]):not([type="reset" i]):not([type="checkbox" i]):not([type="radio" i]),
+textarea:not([cols]) {
+	width: 100%;
 }
 select:not([multiple]):not([size]) {
 	padding-right: 1.5rem;
@@ -223,9 +227,6 @@ select:not([multiple]):not([size]) {
 }
 textarea {
 	resize: vertical;
-}
-textarea:not([cols]) {
-	width: 100%;
 }
 textarea:not([rows]) {
 	height: 8rem;
