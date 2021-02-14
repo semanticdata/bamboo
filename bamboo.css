@@ -24,6 +24,9 @@
 ::after {
 	box-sizing: border-box;
 }
+:last-child {
+	margin-bottom: 0;
+}
 html:focus-within {
 	scroll-behavior: smooth;
 }
