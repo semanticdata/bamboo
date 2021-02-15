@@ -10,7 +10,7 @@ All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any 
 
 Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 
-**[Demo](https://rilwis.github.io/bamboo/demo.html)**
+**[Demo](https://rilwis.github.io/bamboo/demo/)**
 
 ## Features:
 
@@ -36,13 +36,13 @@ Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 #### 🌙/☀ Automatic Theme
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.4.0/dist/bamboo.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.4/dist/bamboo.min.css">
 ```
 
 #### 🌙 Dark Theme
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.4.0/dist/dark.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.4/dist/dark.min.css">
 ```
 
 #### ☀ Light Theme
