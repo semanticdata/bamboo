@@ -1,11 +1,6 @@
 # Bamboo CSS
 
-A classless CSS utility for your HTML, which adds default styling for all HTML elements.
-
-It's very useful when you need:
-
-- A quick HTML/React/Vue demo without spending time styling elements
-- A base style for your blog/website
+A classless CSS library which adds nice default style for all HTML elements. It saves you a lot of time when you need to style HTML for your HTML/React/Vue demo on CodePen/CodeSandbox. It can also be used as a base style for your blog/website.
 
 Bamboo CSS uses [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css) to ensure consistent styling across browsers (no IE support). When using Bamboo CSS, you don't need to include `normalize.css` or `sanitize.css` anymore.
 
@@ -21,6 +16,7 @@ Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 
 - Drop in to use, no configuration, no CSS classes
 - Consistent styling across browsers thanks to `normalize.css` and `sanitize.css`
+- Responsive
 - Supports light and dark themes (automatically detect the OS mode and switch)
 - Uses CSS variables (scoped with prefix `--b-`)
 - Uses `rem`
@@ -31,12 +27,28 @@ Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 
 ### CDN
 
-Use any of the link below:
+#### Latest Version + Automatic Theme
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/bamboo.css">
+```
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rilwis/bamboo/bamboo.min.css">
+#### 🌙/☀ Automatic Theme
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.4.0/dist/bamboo.min.css">
+```
+
+#### 🌙 Dark Theme
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.4.0/dist/dark.min.css">
+```
+
+#### ☀ Light Theme
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.4.0/dist/light.min.css">
 ```
 
 ### NPM
@@ -47,7 +59,7 @@ npm install --save bamboo.css
 
 ### Download
 
-See [https://rilwis.github.io/bamboo/bamboo.min.css](https://rilwis.github.io/bamboo/bamboo.min.css)
+See [https://rilwis.github.io/bamboo/dist/bamboo.min.css](https://rilwis.github.io/bamboo/dist/bamboo.min.css)
 
 ## Credits
 - [new.css](https://github.com/xz/new.css): Bamboo is a fork of new.css
