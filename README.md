@@ -27,7 +27,7 @@ Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 
 ### CDN
 
-#### Latest Version + Automatic Theme
+#### Latest Version + 🌙/☀ Automatic Theme
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/bamboo.css">
@@ -60,6 +60,27 @@ npm install --save bamboo.css
 ### Download
 
 See [https://rilwis.github.io/bamboo/dist/bamboo.min.css](https://rilwis.github.io/bamboo/dist/bamboo.min.css)
+
+### Theming
+
+Bamboo CSS provides the following CSS variables for theming:
+
+```css
+:root {
+	--b-font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	--b-font-mono: Consolas, Monaco, monospace;
+
+	--b-txt: #2e3440;
+	--b-bg-1: #fff;
+	--b-bg-2: #eceff4;
+	--b-line: #eceff4;
+	--b-link: #bf616a;
+	--b-btn-bg: #242933;
+	--b-btn-txt: #fff;
+}
+```
+
+All CSS variables are prefixed with --b so it's safe to use Bamboo CSS with your existing websites.
 
 ## Credits
 - [new.css](https://github.com/xz/new.css): Bamboo is a fork of new.css
