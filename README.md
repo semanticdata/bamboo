@@ -48,7 +48,7 @@ Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 #### ☀ Light Theme
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.4.0/dist/light.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.4/dist/light.min.css">
 ```
 
 ### NPM
