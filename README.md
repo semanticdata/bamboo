@@ -10,7 +10,9 @@ All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any 
 
 Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 
-**[Demo](https://rilwis.github.io/bamboo/demo/)**
+[View demo](https://rilwis.github.io/bamboo/demo/)
+
+[Learn more why I create Bamboo CSS](https://deluxeblogtips.com/bamboo-css/)
 
 ## Features:
 
