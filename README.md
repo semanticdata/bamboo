@@ -1,5 +1,7 @@
 # Bamboo CSS
 
+<a href="https://www.producthunt.com/posts/bamboo-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bamboo-css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=286397&theme=light" alt="Bamboo CSS - A classless CSS utility for your HTML | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+
 A classless CSS library which adds nice default style for all HTML elements. It saves you a lot of time when you need to style HTML for your HTML/React/Vue demo on CodePen/CodeSandbox. It can also be used as a base style for your blog/website.
 
 Bamboo CSS uses [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css) to ensure consistent styling across browsers (no IE support). When using Bamboo CSS, you don't need to include `normalize.css` or `sanitize.css` anymore.
