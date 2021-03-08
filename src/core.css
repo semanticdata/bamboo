@@ -151,7 +151,6 @@ pre {
 	padding: 1.5rem;
 	border-radius: 0;
 	overflow: auto;
-	white-space: pre-wrap;
 }
 pre code {
 	padding: 0;
@@ -181,7 +180,7 @@ table caption {
 	margin-bottom: .5rem;
 }
 tr {
-	border-bottom: 1px solid var(--b-line);	
+	border-bottom: 1px solid var(--b-line);
 }
 td,
 th {
@@ -238,8 +237,8 @@ textarea:not([cols]) {
 select:not([multiple]):not([size]) {
 	padding-right: 1.5rem;
 	background: var(--b-bg-2) url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#2e3440"><path d="M5 6l5 5 5-5 2 1-7 7-7-7 2-1z"/></svg>') no-repeat right .5rem center;
-	-moz-appearance: none; 
-	-webkit-appearance: none; 
+	-moz-appearance: none;
+	-webkit-appearance: none;
 	appearance: none;
 }
 @media (prefers-color-scheme: dark) {
