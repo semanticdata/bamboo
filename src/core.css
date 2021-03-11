@@ -8,7 +8,7 @@ html:focus-within {
 }
 body {
 	max-width: 70ch;
-	padding: 1rem;
+	padding: 0 1rem;
 	margin: auto;
 	background: var(--b-bg-1);
 	font-family: var(--b-font-main);
