@@ -165,10 +165,19 @@ details {
 	border: 1px solid var(--b-line);
 	border-radius: .25rem;
 }
+details > :last-child {
+	margin-bottom: 0;
+}
+details[open] > summary {
+	margin-bottom: 1.5rem;
+}
 summary {
 	display: list-item;
 	cursor: pointer;
 	font-weight: bold;
+}
+summary:focus {
+	outline: none;
 }
 
 /* Table */
