@@ -40,19 +40,19 @@ Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 #### 🌙/☀ Automatic Theme
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.5/dist/bamboo.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.6/dist/bamboo.min.css">
 ```
 
 #### 🌙 Dark Theme
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.5/dist/dark.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.6/dist/dark.min.css">
 ```
 
 #### ☀ Light Theme
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.5/dist/light.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.6/dist/light.min.css">
 ```
 
 ### NPM
@@ -81,6 +81,7 @@ Bamboo CSS provides the following CSS variables for theming:
 	--b-link: #bf616a;
 	--b-btn-bg: #242933;
 	--b-btn-txt: #fff;
+	--b-focus: #d8dee9;
 }
 ```
 
