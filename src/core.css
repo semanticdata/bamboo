@@ -234,6 +234,13 @@ textarea {
 	line-height: 1.125;
 	color: var(--b-txt);
 }
+input:focus,
+select:focus,
+textarea:focus,
+details:focus-within {
+	outline: none;
+	box-shadow: 0 0 0 2px var(--b-focus);
+}
 select,
 input:not([size]):not([type="button" i]):not([type="submit" i]):not([type="reset" i]):not([type="checkbox" i]):not([type="radio" i]) {
 	width: 100%;
