@@ -110,12 +110,12 @@
 	<form>
 		<p><em>This is not a real form and does not submit or save any information.</em></p>
 		<p>
-			<label>First name</label><br>
-			<input type="text" name="first_name">
+			<label for="first-name">First name</label><br>
+			<input type="text" name="first_name" id="first-name">
 		</p>
 		<p>
-			<label>Last name</label><br>
-			<input type="text" name="last_name">
+			<label for="last-name">Last name</label><br>
+			<input type="text" name="last_name" id="last-name">
 		</p>
 		<p>
 			<label>Gender</label><br>
@@ -135,20 +135,20 @@
 			</label>
 		</p>
 		<p>
-			<label>Email</label><br>
-			<input type="email" name="email" required="">
+			<label for="email">Email (*)</label><br>
+			<input type="email" name="email" required id="email">
 		</p>
 		<p>
-			<label>Phone number</label><br>
-			<input type="tel" name="phone">
+			<label for="phone">Phone number</label><br>
+			<input type="tel" name="phone" id="phone">
 		</p>
 		<p>
-			<label>Password</label><br>
-			<input type="password" name="password">
+			<label for="password">Password</label><br>
+			<input type="password" name="password" id="password">
 		</p>
 		<p>
-			<label>Country</label><br>
-			<select>
+			<label for="country">Country</label><br>
+			<select id="country">
 				<option>China</option>
 				<option>India</option>
 				<option>United States</option>
@@ -157,8 +157,19 @@
 			</select>
 		</p>
 		<p>
-			<label>Comments</label><br>
-			<textarea></textarea>
+			<label for="city">City</label><br>
+			<input type="text" id="city" list="city-list">
+			<datalist id="city-list">
+				<option>New York</option>
+				<option>Los Angeles</option>
+				<option>Chicago</option>
+				<option>Holiwood</option>
+				<option>Washington</option>
+			</select>
+		</p>
+		<p>
+			<label for="comments">Comments</label><br>
+			<textarea id="comments"></textarea>
 		</p>
 		<p>
 			<label>
