@@ -20,16 +20,10 @@
 		"url": "https://github.com/rilwis/bamboo/issues"
 	},
 	"homepage": "https://github.com/rilwis/bamboo",
-	"devDependencies": {
-		"cssnano": "^4.1.10",
-		"postcss": "^8.2.5",
-		"postcss-cli": "^8.3.1",
-		"postcss-import": "^14.0.0"
-	},
 	"scripts": {
-		"main": "postcss src/main.css > dist/bamboo.min.css",
-		"dark": "postcss src/dark.css > dist/dark.min.css",
-		"light": "postcss src/light.css > dist/light.min.css",
+		"main": "sass --no-source-map -s compressed src/main.scss dist/bamboo.min.css",
+		"dark": "sass --no-source-map -s compressed src/dark.scss dist/dark.min.css",
+		"light": "sass --no-source-map -s compressed src/light.scss dist/light.min.css",
 		"start": "yarn main && yarn dark && yarn light"
 	}
 }
