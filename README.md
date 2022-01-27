@@ -29,28 +29,22 @@ Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 
 ### CDN
 
-#### Latest Version + 🌙/☀ Automatic Theme
+#### 🌙/☀ Automatic Theme
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/bamboo.css">
 ```
 
-#### 🌙/☀ Automatic Theme
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.7/dist/bamboo.min.css">
-```
-
 #### 🌙 Dark Theme
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.7/dist/dark.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css/dist/dark.min.css">
 ```
 
 #### ☀ Light Theme
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/bamboo.css@1.3.7/dist/light.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bamboo.css/dist/light.min.css">
 ```
 
 ### NPM
@@ -86,6 +80,6 @@ Bamboo CSS provides the following CSS variables for theming:
 All CSS variables are prefixed with `--b-` so it's safe to use Bamboo CSS with your existing websites.
 
 ## Credits
-- [new.css](https://github.com/xz/new.css): Bamboo is a fork of new.css
+- [new.css](https://github.com/xz/new.css): Bamboo is a fork/re-build of `new.css`
 - [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css)
 - [Nord theme](https://www.nordtheme.com) for color schemes
