@@ -24,6 +24,6 @@
 		"main": "sass --no-source-map --style compressed src/main.scss dist/bamboo.min.css",
 		"dark": "sass --no-source-map --style compressed src/dark.scss dist/dark.min.css",
 		"light": "sass --no-source-map --style compressed src/light.scss dist/light.min.css",
-		"start": "yarn main && yarn dark && yarn light"
+		"start": "npm run main && npm run dark && npm run light"
 	}
 }

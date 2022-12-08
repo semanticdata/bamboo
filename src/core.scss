@@ -192,8 +192,13 @@ tr {
 }
 td,
 th {
-	padding: .5rem 0;
+	padding: .5rem 0 .5rem .5rem;
+
+	&:first-child {
+		padding-left: 0;
+	}
 }
+
 th {
 	text-align: left;
 }
