@@ -2,7 +2,7 @@
 
 A classless CSS library which adds nice default style for all HTML elements. It saves you a lot of time when you need to style HTML for your HTML/React/Vue demo on CodePen/CodeSandbox. It can also be used as a base style for your blog/website.
 
-Bamboo CSS uses [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css) to ensure consistent styling across browsers (no IE support). When using Bamboo CSS, you don't need to include `normalize.css` or `sanitize.css` anymore.
+Bamboo CSS uses [modern-normalize](https://github.com/sindresorhus/modern-normalize) and [sanitize.css](https://github.com/csstools/sanitize.css) to ensure consistent styling across browsers (no IE support). When using Bamboo CSS, you don't need to include `normalize.css` or `sanitize.css` anymore.
 
 Bamboo CSS uses CSS variables for theming, allowing to dynamically change the theme if you want. By default, it provides 2 themes for light and dark modes. The theme is automatically switched based on the system mode.
 
@@ -17,7 +17,7 @@ Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 ## Features:
 
 - Drop in to use, no configuration, no CSS classes
-- Consistent styling across browsers thanks to `normalize.css` and `sanitize.css`
+- Consistent styling across browsers thanks to `modern-normalize` and `sanitize.css`
 - Responsive
 - Supports light and dark themes (automatically detect the OS mode and switch)
 - Uses CSS variables (scoped with prefix `--b-`)
@@ -80,6 +80,5 @@ Bamboo CSS provides the following CSS variables for theming:
 All CSS variables are prefixed with `--b-` so it's safe to use Bamboo CSS with your existing websites.
 
 ## Credits
-- [new.css](https://github.com/xz/new.css): Bamboo is a fork/re-build of `new.css`
-- [normalize.css](https://github.com/necolas/normalize.css/) and [sanitize.css](https://github.com/csstools/sanitize.css)
+- [modern-normalize](https://github.com/sindresorhus/modern-normalize) and [sanitize.css](https://github.com/csstools/sanitize.css)
 - [Nord theme](https://www.nordtheme.com) for color schemes
