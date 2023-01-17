@@ -275,6 +275,10 @@ textarea:not([rows]) {
 	height: 8rem;
 }
 
+// Disable double click to zoom in iOS.
+button {
+    touch-action: manipulation;
+}
 button,
 [type="button" i],
 [type="submit" i],
