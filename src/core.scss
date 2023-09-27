@@ -253,7 +253,19 @@ select {
 	text-transform: none;
 }
 select,
-input:not([size]):not([type="button" i]):not([type="submit" i]):not([type="reset" i]):not([type="checkbox" i]):not([type="radio" i]) {
+input[type="date"],
+input[type="datetime-local"],
+input[type="datetime"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
 	width: 100%;
 }
 [type="color" i] {
