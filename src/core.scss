@@ -371,9 +371,6 @@ progress {
 [aria-busy="true"] {
 	cursor: progress;
 }
-[aria-controls] {
-	cursor: pointer;
-}
 [aria-disabled="true"],
 [disabled] {
 	cursor: not-allowed;
