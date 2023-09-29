@@ -250,20 +250,25 @@ select {
 	text-transform: none;
 }
 select,
-input[type="date"],
-input[type="datetime-local"],
-input[type="datetime"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"] {
+[type="date"],
+[type="datetime-local"],
+[type="datetime"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"] {
 	width: 100%;
+}
+[type="image"],
+[type="checkbox"],
+[type="radio"] {
+	cursor: pointer;
 }
 [type="color"] {
 	min-height: 2.125rem;
