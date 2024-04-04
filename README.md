@@ -8,7 +8,7 @@ Bamboo CSS uses CSS variables for theming, allowing to dynamically change the th
 
 All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any CSS framework without conflicts.
 
-Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
+Bamboo CSS is very lightweight, only **5.3KB** (unzipped) and **1.9KB** (gzipped).
 
 [View demo](https://rilwis.github.io/bamboo/demo/)
 
@@ -23,7 +23,19 @@ Bamboo CSS is very lightweight, only **1.67KB** (minified and gzipped).
 - Uses CSS variables (scoped with prefix `--b-`)
 - Uses `rem`
 - Compatible with other CSS frameworks
-- Lightweight
+- Lightweight (**5.3KB** (unzipped) and **1.9KB** (gzipped).)
+
+Notable features:
+
+- Uses system fonts
+- Uses smooth scroll
+- Disables double click on button to zoom in iOS
+- Beautiful toggle panel (similar to accordion) thanks to `<details>` and `<summary>` tags
+- Sets `width: 100%` for all text inputs, textarea and selects
+- Sets `cursor: pointer` for checkbox, radio, image inputs and also form labels
+- Sets `-webkit-appearance: none` for search input to avoid default styling in Chrome and Safari
+- Sets `text-wrap: balance` for headings
+- Adds a custom arrow for selects
 
 ## Usage
 
@@ -63,8 +75,8 @@ Bamboo CSS provides the following CSS variables for theming:
 
 ```css
 :root {
-	--b-font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	--b-font-mono: Consolas, Monaco, monospace;
+	--b-font-main: system-ui, sans-serif;
+	--b-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 	--b-txt: #2e3440;
 	--b-bg-1: #fff;
