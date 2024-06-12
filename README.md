@@ -74,7 +74,7 @@ npm install --save bamboo.css
 
 ### Download
 
-See [https://rilwis.github.io/bamboo/dist/bamboo.min.css](https://rilwis.github.io/bamboo/dist/bamboo.min.css).
+See [bamboo/dist/bamboo.min.css](https://semanticdata.github.io/bamboo/dist/bamboo.min.css).
 
 ### Customizing
 
