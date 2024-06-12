@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bamboo CSS Demo</title>
+    <meta
+      name="description"
+      content="A classless CSS library which adds nice default style for all HTML elements."
+    />
+    <link rel="stylesheet" href="bamboo.min.css" />
+  </head>
+  <body>
+    <h1 id="bamboo-css">Bamboo CSS</h1>
+    <p>Color scheme: <a href="index.html">Auto</a> | <a href="dark.html">Dark</a> | <a href="light.html">Light</a> | <a href="readme.html">README</a></p>
+    <p>
+      <img
+        src="https://img.shields.io/github/languages/code-size/semanticdata/bamboo"
+      />
+      <img src="https://img.shields.io/github/repo-size/semanticdata/bamboo" />
+      <img
+        src="https://img.shields.io/github/commit-activity/t/semanticdata/bamboo"
+      />
+      <img
+        src="https://img.shields.io/github/last-commit/semanticdata/bamboo"
+      />
+    </p>
+
+    <p
+      >A classless CSS library which adds nice default style for all HTML
+      elements. It saves you a lot of time when you need to style HTML for your
+      HTML/React/Vue demo on CodePen/CodeSandbox. It can also be used as a base
+      style for your blog/website.</p
+    >
+    <p
+      >Bamboo CSS uses
+      <a href="https://github.com/sindresorhus/modern-normalize"
+        >modern-normalize</a
+      >
+      and <a href="https://github.com/csstools/sanitize.css">sanitize.css</a> to
+      ensure consistent styling across browsers (no IE support). When using
+      Bamboo CSS, you don&#39;t need to include <code>normalize.css</code> or
+      <code>sanitize.css</code> anymore.</p
+    >
+    <p
+      >Bamboo CSS uses CSS variables for theming, allowing to dynamically change
+      the theme if you want. By default, it provides 2 themes for light and dark
+      modes. The theme is automatically switched based on the system mode.</p
+    >
+    <p
+      >All CSS variables are prefixed with <code>--b-</code>, allowing to use
+      Bamboo CSS with any CSS framework without conflicts.</p
+    >
+    <p
+      >Bamboo CSS is very lightweight, only <strong>5.3KB</strong> (unzipped)
+      and <strong>1.9KB</strong> (gzipped).</p
+    >
+    <p
+      ><a href="https://rilwis.github.io/bamboo/demo/">
+        <img
+          src="https://img.shields.io/badge/Check%20out%20the%20Demo-F0E68C?style=for-the-badge&link=https%3A%2F%2Fsemanticdata.github.io%2Fbamboo"
+        /> </a
+    ></p>
+    <h2 id="-features">✨ Features</h2>
+    <ul>
+      <li>Drop in to use, no configuration, no CSS classes</li>
+      <li
+        >Consistent styling across browsers thanks to
+        <code>modern-normalize</code> and <code>sanitize.css</code></li
+      >
+      <li>Responsive</li>
+      <li
+        >Supports light and dark themes (automatically detect the OS mode and
+        switch)</li
+      >
+      <li>Uses CSS variables (scoped with prefix <code>--b-</code>)</li>
+      <li>Uses <code>rem</code></li>
+      <li>Compatible with other CSS frameworks</li>
+      <li
+        >Lightweight (<strong>5.3KB</strong> (unzipped) and
+        <strong>1.9KB</strong> (gzipped).)</li
+      >
+    </ul>
+    <h3 id="-notable-features">⭐ Notable Features</h3>
+    <ul>
+      <li>Uses system fonts</li>
+      <li>Uses smooth scroll</li>
+      <li>Disables double click on button to zoom in iOS</li>
+      <li
+        >Beautiful toggle panel (similar to accordion) thanks to
+        <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> tags</li
+      >
+      <li
+        >Sets <code>width: 100%</code> for all text inputs, textarea and
+        selects</li
+      >
+      <li
+        >Sets <code>cursor: pointer</code> for checkbox, radio, image inputs and
+        also form labels</li
+      >
+      <li
+        >Sets <code>-webkit-appearance: none</code> for search input to avoid
+        default styling in Chrome and Safari</li
+      >
+      <li>Sets <code>text-wrap: balance</code> for headings</li>
+      <li>Adds a custom arrow for selects</li>
+    </ul>
+    <h2 id="-getting-started">🚀 Getting Started</h2>
+    <p>You have many options to integrate Bamboo CSS into your project.</p>
+    <h3 id="-automatic-theme-via-cdn">🌙/☀ Automatic Theme via CDN</h3>
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/bamboo.css"</span>&gt;</span>
+</code></pre>
+    <h3 id="-dark-theme-via-cdn">🌙 Dark Theme via CDN</h3>
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/bamboo.css/dist/dark.min.css"</span>&gt;</span>
+</code></pre>
+    <h3 id="-light-theme-via-cdn">☀ Light Theme via CDN</h3>
+    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://unpkg.com/bamboo.css/dist/light.min.css"</span>&gt;</span>
+</code></pre>
+    <h3 id="add-via-npm">Add via NPM</h3>
+    <pre><code class="lang-bash">npm <span class="hljs-keyword">install</span> <span class="hljs-comment">--save bamboo.css</span>
+</code></pre>
+    <h3 id="download">Download</h3>
+    <p
+      >See
+      <a href="https://semanticdata.github.io/bamboo/dist/bamboo.min.css"
+        >bamboo/dist/bamboo.min.css</a
+      >.</p
+    >
+    <h3 id="customizing">Customizing</h3>
+    <p>Bamboo CSS provides the following CSS variables for theming:</p>
+    <pre><code class="lang-css">:root {
+ -<span class="ruby">-b-font-<span class="hljs-symbol">main:</span> system-ui, sans-serif;
+</span> -<span class="ruby">-b-font-<span class="hljs-symbol">mono:</span> ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, <span class="hljs-string">"Liberation Mono"</span>, <span class="hljs-string">"Courier New"</span>, monospace;
+</span>
+ -<span class="ruby">-b-<span class="hljs-symbol">txt:</span> <span class="hljs-comment">#2e3440;</span>
+</span> -<span class="ruby">-b-bg-<span class="hljs-number">1</span>: <span class="hljs-comment">#fff;</span>
+</span> -<span class="ruby">-b-bg-<span class="hljs-number">2</span>: <span class="hljs-comment">#eceff4;</span>
+</span> -<span class="ruby">-b-<span class="hljs-symbol">line:</span> <span class="hljs-comment">#eceff4;</span>
+</span> -<span class="ruby">-b-<span class="hljs-symbol">link:</span> <span class="hljs-comment">#bf616a;</span>
+</span> -<span class="ruby">-b-btn-<span class="hljs-symbol">bg:</span> <span class="hljs-comment">#242933;</span>
+</span> -<span class="ruby">-b-btn-<span class="hljs-symbol">txt:</span> <span class="hljs-comment">#fff;</span>
+</span> -<span class="ruby">-b-<span class="hljs-symbol">focus:</span> <span class="hljs-comment">#d8dee9;</span>
+</span>}
+</code></pre>
+    <p
+      >All CSS variables are prefixed with <code>--b-</code> so it&#39;s safe to
+      use Bamboo CSS with your existing websites.</p
+    >
+    <h2 id="-acknowledgements">💜 Acknowledgements</h2>
+    <p
+      >This repository is a fork of
+      <a href="https://github.com/rilwis/bamboo">Bamboo CSS</a>. Same as its
+      predecesor
+      <a href="https://github.com/sindresorhus/modern-normalize"
+        >modern-normalize</a
+      >, and
+      <a href="https://github.com/csstools/sanitize.css">sanitize.css</a> are a
+      source of inspiration. For color schemes we have the
+      <a href="https://www.nordtheme.com">Nord theme</a> as source.</p
+    >
+    <h2 id="-license">© License</h2>
+    <p
+      >Source code in this repository is available under the
+      <a href="LICENSE">MIT License</a>.</p
+    >
+    <p
+      ><img
+        src="https://github.com/semanticdata/public-test/blob/main/GIF/foot.gif?raw=true"
+        alt="evolution"
+    /></p>
+  </body>
+</html>
