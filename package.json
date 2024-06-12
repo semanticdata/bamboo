@@ -24,7 +24,11 @@
 		"main": "sass --no-source-map --style compressed src/main.scss dist/bamboo.min.css",
 		"dark": "sass --no-source-map --style compressed src/dark.scss dist/dark.min.css",
 		"light": "sass --no-source-map --style compressed src/light.scss dist/light.min.css",
-		"start": "npm run main && npm run dark && npm run light"
+		"start": "npm run main && npm run dark && npm run light",
+		"main-demo": "sass --no-source-map --style compressed src/main.scss demo/bamboo.min.css",
+		"dark-demo": "sass --no-source-map --style compressed src/dark.scss demo/dark.min.css",
+		"light-demo": "sass --no-source-map --style compressed src/light.scss demo/light.min.css",
+		"start-demo": "npm run main-demo && npm run dark-demo && npm run light-demo"
 	},
 	"devDependencies": {
 		"sass": "^1.72.0"
