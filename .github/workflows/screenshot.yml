@@ -25,6 +25,8 @@ jobs:
       with:
         path: screenshot.png
     - name: Download artifact
+      with:
+        path: screenshot.png
       uses: actions/download-artifact@v4
     - name: Display structure of downloaded files
       run: ls -R
