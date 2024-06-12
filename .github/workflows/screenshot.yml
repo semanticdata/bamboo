@@ -14,4 +14,4 @@ jobs:
         source: https://semanticdata.github.io/bamboo/
         destination: screenshot.png
     - name: Copy Screenshot
-      run: cp ${{ steps.screenshot-generator.outputs.path }} ./
+      run: cp ${{ steps.screenshot.outputs.path }} .
