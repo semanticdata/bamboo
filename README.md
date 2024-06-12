@@ -44,29 +44,29 @@ Bamboo CSS is very lightweight, only **5.3KB** (unzipped) and **1.9KB** (gzipped
 - Sets `text-wrap: balance` for headings
 - Adds a custom arrow for selects
 
-## Usage
+## 🚀 Getting Started
 
-### CDN
+You have many options to integrate Bamboo CSS into your project.
 
-#### 🌙/☀ Automatic Theme
+### 🌙/☀ Automatic Theme via CDN
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/bamboo.css">
 ```
 
-#### 🌙 Dark Theme
+### 🌙 Dark Theme via CDN
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/bamboo.css/dist/dark.min.css">
 ```
 
-#### ☀ Light Theme
+### ☀ Light Theme via CDN
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/bamboo.css/dist/light.min.css">
 ```
 
-### NPM
+### Add via NPM
 
 ```bash
 npm install --save bamboo.css
@@ -74,9 +74,9 @@ npm install --save bamboo.css
 
 ### Download
 
-See [https://rilwis.github.io/bamboo/dist/bamboo.min.css](https://rilwis.github.io/bamboo/dist/bamboo.min.css)
+See [https://rilwis.github.io/bamboo/dist/bamboo.min.css](https://rilwis.github.io/bamboo/dist/bamboo.min.css).
 
-### Theming
+### Customizing
 
 Bamboo CSS provides the following CSS variables for theming:
 
@@ -100,7 +100,7 @@ All CSS variables are prefixed with `--b-` so it's safe to use Bamboo CSS with y
 
 ## 💜 Acknowledgements
 
-This repository is a fork of [rilwis/bamboo](https://github.com/rilwis/bamboo). Same as its predecesor, [modern-normalize](https://github.com/sindresorhus/modern-normalize), and [sanitize.css](https://github.com/csstools/sanitize.css) are a source of inspiration.
+This repository is a fork of [Bamboo CSS](https://github.com/rilwis/bamboo). Same as its predecesor [modern-normalize](https://github.com/sindresorhus/modern-normalize), and [sanitize.css](https://github.com/csstools/sanitize.css) are a source of inspiration.
 
 For color schemes we have the [Nord theme](https://www.nordtheme.com) as source.
 
