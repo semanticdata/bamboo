@@ -1,0 +1,15 @@
+name: Take Website Screenshot
+
+on:
+  workflow_dispatch:
+  # push: { branches: ["main"] }
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Screenshot Website
+      uses: swinton/screenshot-website@v1
+      with:
+        source: https://semanticdata.github.io/bamboo/
+        destination: screenshot.png
