@@ -6,7 +6,7 @@ on:
 
 permissions:
   contents: write
-  id-token: write
+  # id-token: write
 
 jobs:
   screenshots:
@@ -15,11 +15,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Take Screenshot
-      id: screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
         url: https://semanticdata.github.io/bamboo/
-    - name: Commit screenshot
+    - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v5
-    - name: Display structure of downloaded files
-      run: ls -R
+    # - name: Display structure of downloaded files
+    #   run: ls -R
