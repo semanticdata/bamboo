@@ -13,3 +13,4 @@ jobs:
       with:
         source: https://semanticdata.github.io/bamboo/
         destination: screenshot.png
+        path: screenshot.png
