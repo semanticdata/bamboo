@@ -10,21 +10,25 @@ permissions:
   id-token: write
 
 jobs:
-  screenshot:
+  screenshots:
     runs-on: ubuntu-latest
     steps:
-    - name: Screenshot Website
-      uses: swinton/screenshot-website@main
+    - name: Take Screenshot
+    - uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
-        source: https://semanticdata.github.io/bamboo/
-        destination: screenshot.png
+        url: https://https://semanticdata.github.io/bamboo/
+    # - name: Screenshot Website
+    #   uses: swinton/screenshot-website@main
+    #   with:
+    #     source: https://semanticdata.github.io/bamboo/
+    #     destination: screenshot.png
     # - name: Upload artifact
     #   uses: actions/upload-artifact@v4
     #   with:
     #     name: screenshot
     #     path: screenshot.png
-    - name: Download created artifact
-      uses: actions/download-artifact@v4
+    # - name: Download created artifact
+    #   uses: actions/download-artifact@v4
     # - name: Copy Screenshot
     #   run: cp ${{ steps.screenshot.outputs.path }} .
     - name: Display structure of downloaded files
