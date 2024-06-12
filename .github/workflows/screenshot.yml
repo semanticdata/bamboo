@@ -16,12 +16,15 @@ jobs:
       uses: actions/checkout@v4
     - name: Take Screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
+      id: take-screenshot
       with:
         url: https://semanticdata.github.io/bamboo/
         output: screenshot.png
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v5
+      id: commit-screenshot
       with:
         commit_message: Commit from screenshot workflow
+        ref: ${{ github.head_ref }}
     - name: Display structure of downloaded files
       run: ls -R
