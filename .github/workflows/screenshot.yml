@@ -23,7 +23,10 @@ jobs:
         output: screenshot.png
         url: https://semanticdata.github.io/bamboo/readme
         # url: https://semanticdata.github.io/bamboo/
+        scriptBefore: change-viewport.js
+        # scriptBefore: document.getElementById("viewport").setAttribute("content", "width=960");
     - name: Commit new screenshot
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: Commit from screenshot workflow
+
