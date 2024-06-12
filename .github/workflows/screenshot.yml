@@ -23,5 +23,6 @@ jobs:
         path: screenshot.png
     - name: Download created artifact
       uses: actions/download-artifact@v4
-    # - name: Copy Screenshot
-    #   run: cp ${{ steps.screenshot.outputs.path }} .
+    - name: Copy Screenshot
+      # run: cp ${{ steps.screenshot.outputs.path }} .
+      run: cp screenshot.png .
