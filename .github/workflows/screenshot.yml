@@ -12,6 +12,8 @@ jobs:
   screenshots:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@v4
     - name: Take Screenshot
       id: screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
@@ -19,9 +21,5 @@ jobs:
         url: https://semanticdata.github.io/bamboo/
     - name: Commit screenshot
       uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: Changed files via GitHub Actions
-    # - name: Copy Screenshot
-    #   run: cp ${{ steps.screenshot.outputs.path }} .
     - name: Display structure of downloaded files
       run: ls -R
