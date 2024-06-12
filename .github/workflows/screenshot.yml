@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
     - name: Take Screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
       id: take-screenshot
