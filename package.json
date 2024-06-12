@@ -31,6 +31,6 @@
 		"start-demo": "npm run main-demo && npm run dark-demo && npm run light-demo"
 	},
 	"devDependencies": {
-		"sass": "^1.72.0"
+		"sass": "^1.77.5"
 	}
 }
