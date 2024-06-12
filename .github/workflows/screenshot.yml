@@ -18,7 +18,10 @@ jobs:
       uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
         url: https://semanticdata.github.io/bamboo/
+        output: screenshot-2.png
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v5
-    # - name: Display structure of downloaded files
-    #   run: ls -R
+      with:
+        commit_message: Commit from screenshot workflow
+    - name: Display structure of downloaded files
+      run: ls -R
