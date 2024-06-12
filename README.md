@@ -1,5 +1,12 @@
 # Bamboo CSS
 
+<p>
+<img src="https://img.shields.io/github/languages/code-size/semanticdata/bamboo" />
+<img src="https://img.shields.io/github/repo-size/semanticdata/bamboo" />
+<img src="https://img.shields.io/github/commit-activity/t/semanticdata/bamboo" />
+<img src="https://img.shields.io/github/last-commit/semanticdata/bamboo" />
+</p>
+
 A classless CSS library which adds nice default style for all HTML elements. It saves you a lot of time when you need to style HTML for your HTML/React/Vue demo on CodePen/CodeSandbox. It can also be used as a base style for your blog/website.
 
 Bamboo CSS uses [modern-normalize](https://github.com/sindresorhus/modern-normalize) and [sanitize.css](https://github.com/csstools/sanitize.css) to ensure consistent styling across browsers (no IE support). When using Bamboo CSS, you don't need to include `normalize.css` or `sanitize.css` anymore.
@@ -10,11 +17,11 @@ All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any 
 
 Bamboo CSS is very lightweight, only **5.3KB** (unzipped) and **1.9KB** (gzipped).
 
-[View demo](https://rilwis.github.io/bamboo/demo/)
+[View demo](https://rilwis.github.io/bamboo/demo/).
 
-[Learn more why I create Bamboo CSS](https://deluxeblogtips.com/bamboo-css/)
+[Learn more why I create Bamboo CSS](https://deluxeblogtips.com/bamboo-css/).
 
-## Features:
+## ✨ Features
 
 - Drop in to use, no configuration, no CSS classes
 - Consistent styling across browsers thanks to `modern-normalize` and `sanitize.css`
@@ -25,7 +32,7 @@ Bamboo CSS is very lightweight, only **5.3KB** (unzipped) and **1.9KB** (gzipped
 - Compatible with other CSS frameworks
 - Lightweight (**5.3KB** (unzipped) and **1.9KB** (gzipped).)
 
-Notable features:
+### ⭐ Notable Features
 
 - Uses system fonts
 - Uses smooth scroll
@@ -75,22 +82,28 @@ Bamboo CSS provides the following CSS variables for theming:
 
 ```css
 :root {
-	--b-font-main: system-ui, sans-serif;
-	--b-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+ --b-font-main: system-ui, sans-serif;
+ --b-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-	--b-txt: #2e3440;
-	--b-bg-1: #fff;
-	--b-bg-2: #eceff4;
-	--b-line: #eceff4;
-	--b-link: #bf616a;
-	--b-btn-bg: #242933;
-	--b-btn-txt: #fff;
-	--b-focus: #d8dee9;
+ --b-txt: #2e3440;
+ --b-bg-1: #fff;
+ --b-bg-2: #eceff4;
+ --b-line: #eceff4;
+ --b-link: #bf616a;
+ --b-btn-bg: #242933;
+ --b-btn-txt: #fff;
+ --b-focus: #d8dee9;
 }
 ```
 
 All CSS variables are prefixed with `--b-` so it's safe to use Bamboo CSS with your existing websites.
 
-## Credits
-- [modern-normalize](https://github.com/sindresorhus/modern-normalize) and [sanitize.css](https://github.com/csstools/sanitize.css)
-- [Nord theme](https://www.nordtheme.com) for color schemes
+## 💜 Acknowledgements
+
+This repository is a fork of [rilwis/bamboo](https://github.com/rilwis/bamboo). Same as its predecesor, [modern-normalize](https://github.com/sindresorhus/modern-normalize), and [sanitize.css](https://github.com/csstools/sanitize.css) are a source of inspiration.
+
+For color schemes we have the [Nord theme](https://www.nordtheme.com) as source.
+
+## © License
+
+Source code in this repository is available under the [MIT License](LICENSE).
