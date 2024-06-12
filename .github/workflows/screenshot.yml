@@ -17,11 +17,17 @@ jobs:
     #   with:
     #     fetch-depth: 0
 
+    - name: Display structure of downloaded files again
+      run: ls -R
+
     - name: Delete screenshot
       run: rm -f screenshot.png
 
     - name: Display structure of downloaded files again
       run: ls -R
+
+    - name: Commit
+      uses: stefanzweifel/git-auto-commit-action@v5
 
     - name: Take Screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
@@ -42,6 +48,6 @@ jobs:
 
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: Commit from screenshot workflow
-    #     push_options: '--force'
+      # with:
+      #   commit_message: Commit from screenshot workflow
+      #   push_options: '--force'
