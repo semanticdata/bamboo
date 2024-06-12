@@ -98,6 +98,11 @@ Bamboo CSS provides the following CSS variables for theming:
 
 All CSS variables are prefixed with `--b-` so it's safe to use Bamboo CSS with your existing websites.
 
+## 🔁 Changes from Upstream
+
+- Added new *scripts* within [package.json](package.json) to build the CSS files inside the `demo` folder.
+- Added [workflow](.github/workflows/) to deploy the site via GitHub Actions.
+
 ## 💜 Acknowledgements
 
 This repository is a fork of [Bamboo CSS](https://github.com/rilwis/bamboo). Same as its predecesor [modern-normalize](https://github.com/sindresorhus/modern-normalize), and [sanitize.css](https://github.com/csstools/sanitize.css) are a source of inspiration. For color schemes we have the [Nord theme](https://www.nordtheme.com) as source.
