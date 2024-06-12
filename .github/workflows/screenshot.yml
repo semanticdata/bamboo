@@ -15,7 +15,7 @@ jobs:
     - name: Take Screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
-        url: https://https://semanticdata.github.io/bamboo/
+        url: https://semanticdata.github.io/bamboo/
     # - name: Screenshot Website
     #   uses: swinton/screenshot-website@main
     #   with:
