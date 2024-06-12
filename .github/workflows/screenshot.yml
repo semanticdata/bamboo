@@ -19,8 +19,8 @@ jobs:
         destination: screenshot.png
     - name: Upload artifact
       uses: actions/upload-artifact@v4
-      # with:
-      #   path: screenshot.png
+      with:
+        path: screenshot.png
     - name: Download created artifact
       uses: actions/download-artifact@v4
     # - name: Copy Screenshot
