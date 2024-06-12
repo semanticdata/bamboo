@@ -20,10 +20,10 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
-        path: screenshot
+        path: screenshot.png
     - name: Download created artifact
       uses: actions/download-artifact@v4
     # - name: Copy Screenshot
-      # run: cp ${{ steps.screenshot.outputs.path }} .
+    #   run: cp ${{ steps.screenshot.outputs.path }} .
     - name: Display structure of downloaded files
       run: ls -R
