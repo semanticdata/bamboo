@@ -21,17 +21,21 @@ jobs:
       with:
         url: https://semanticdata.github.io/bamboo/
         output: screenshot.png
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+    - name: Download artifact
+      uses: actions/download-artifact@v4
     - name: Display structure of downloaded files
       run: ls -R
     - name: Commit
-    #   uses: stefanzweifel/git-auto-commit-action@v5
-    #   id: commit-screenshot
-    #   with:
-    #     commit_message: Commit from screenshot workflow
-    #     push_options: '--force'
-      uses: GuillaumeFalourd/git-commit-push@v1.3
+      uses: stefanzweifel/git-auto-commit-action@v5
+      id: commit-screenshot
       with:
         commit_message: Commit from screenshot workflow
-        force: true
-        empty: true
-        # files: screenshot.png
+        # push_options: '--force'
+      # uses: GuillaumeFalourd/git-commit-push@v1.3
+      # with:
+      #   commit_message: Commit from screenshot workflow
+      #   force: true
+      #   empty: true
+      #   files: screenshot.png
