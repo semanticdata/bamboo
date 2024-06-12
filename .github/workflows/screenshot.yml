@@ -6,7 +6,6 @@ on:
 
 permissions:
   contents: write
-  # id-token: write
 
 jobs:
   screenshots:
@@ -20,11 +19,12 @@ jobs:
       with:
         url: https://semanticdata.github.io/bamboo/
         output: screenshot.png
+    - name: Display structure of downloaded files
+      run: ls -R
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v5
       id: commit-screenshot
       with:
         commit_message: Commit from screenshot workflow
         ref: ${{ github.head_ref }}
-    - name: Display structure of downloaded files
-      run: ls -R
+        push_options: '--force-with-lease'
