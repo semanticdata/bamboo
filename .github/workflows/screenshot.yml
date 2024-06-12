@@ -8,10 +8,14 @@ jobs:
   screenshot:
     runs-on: ubuntu-latest
     steps:
-    - name: Screenshot Website
-      uses: swinton/screenshot-website@main
+    # - name: Screenshot Website
+    #   uses: swinton/screenshot-website@main
+    #   with:
+    #     source: https://semanticdata.github.io/bamboo/
+    #     destination: screenshot.png
+    # - name: Copy Screenshot
+    #   run: cp ${{ steps.screenshot.outputs.path }} .
+    - name: Screenshot Action
+      uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
-        source: https://semanticdata.github.io/bamboo/
-        destination: screenshot.png
-    - name: Copy Screenshot
-      run: cp ${{ steps.screenshot.outputs.path }} .
+        url: https://semanticdata.github.io/bamboo/
