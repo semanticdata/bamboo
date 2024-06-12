@@ -48,3 +48,8 @@ jobs:
       #   force: true
       #   empty: true
       #   files: screenshot.png
+
+    - name: Add to commit
+      run: git add .
+    - name: Commit
+      uses: GuillaumeFalourd/git-commit-push@v1.3
