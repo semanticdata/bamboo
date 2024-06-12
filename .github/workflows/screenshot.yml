@@ -33,4 +33,5 @@ jobs:
       with:
         commit_message: Commit from screenshot workflow
         force: true
+        empty: true
         # files: screenshot.png
