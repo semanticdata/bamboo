@@ -11,43 +11,19 @@ jobs:
   screenshots:
     runs-on: ubuntu-latest
     steps:
-
-    - name: Checkout
+    - name: Checkout repo
       uses: actions/checkout@v4
-    #   with:
-    #     fetch-depth: 0
-
-    - name: Display structure of downloaded files again
-      run: ls -R
-
-    - name: Delete screenshot
+    - name: Remove previous screenshot
       run: rm -f screenshot.png
-
-    - name: Display structure of downloaded files again
-      run: ls -R
-
-    - name: Commit
+    - name: Commit the removal
       uses: stefanzweifel/git-auto-commit-action@v5
-
-    - name: Take Screenshot
+    - name: Take site screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
-        url: https://semanticdata.github.io/bamboo/
         output: screenshot.png
-
-    # - name: Upload artifact
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #     path: screenshot.png
-
-    # - name: Download artifact
-    #   uses: actions/download-artifact@v4
-
-    - name: Display structure of downloaded files
-      run: ls -R
-
-    - name: Commit
+        url: https://semanticdata.github.io/bamboo/readme
+        # url: https://semanticdata.github.io/bamboo/
+    - name: Commit new screenshot
       uses: stefanzweifel/git-auto-commit-action@v5
-      # with:
-      #   commit_message: Commit from screenshot workflow
-      #   push_options: '--force'
+      with:
+        commit_message: Commit from screenshot workflow
