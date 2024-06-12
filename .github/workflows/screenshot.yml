@@ -37,8 +37,8 @@ jobs:
     # - name: Extract artifact
     #   run: tar -xvf ./artifacts/my-artifact.tar -C ./extracted
 
-    # - name: Commit
-    #   uses: stefanzweifel/git-auto-commit-action@v5
+    - name: Commit
+      uses: stefanzweifel/git-auto-commit-action@v5
       # with:
       #   commit_message: Commit from screenshot workflow
       #   push_options: '--force'
@@ -49,7 +49,5 @@ jobs:
       #   empty: true
       #   files: screenshot.png
 
-    - name: Add to commit
-      run: git add .
-    - name: Commit
-      uses: GuillaumeFalourd/git-commit-push@v1.3
+    - name: Display structure of downloaded files again
+      run: ls -R
