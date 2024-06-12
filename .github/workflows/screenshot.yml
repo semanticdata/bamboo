@@ -26,5 +26,4 @@ jobs:
       id: commit-screenshot
       with:
         commit_message: Commit from screenshot workflow
-        ref: ${{ github.head_ref }}
-        push_options: '--force-with-lease'
+        push_options: '--force'
