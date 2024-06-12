@@ -16,6 +16,10 @@ jobs:
       uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
         url: https://semanticdata.github.io/bamboo/
+    - uses: actions/upload-artifact@v4
+      with:
+        name: screenshot
+        path: /*
     - name: Download created artifact
       uses: actions/download-artifact@v4
     # - name: Copy Screenshot
