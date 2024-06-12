@@ -30,7 +30,7 @@
 		"light-demo": "sass --no-source-map --style compressed src/light.scss demo/light.min.css",
 		"start-demo": "npm run main-demo && npm run dark-demo && npm run light-demo"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"sass": "^1.77.5"
 	}
 }
