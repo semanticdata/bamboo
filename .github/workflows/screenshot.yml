@@ -17,10 +17,11 @@ jobs:
       with:
         source: https://semanticdata.github.io/bamboo/
         destination: screenshot.png
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        path: screenshot.png
+    # - name: Upload artifact
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: screenshot
+    #     path: screenshot.png
     - name: Download created artifact
       uses: actions/download-artifact@v4
     # - name: Copy Screenshot
