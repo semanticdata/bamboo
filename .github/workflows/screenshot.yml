@@ -11,10 +11,10 @@ jobs:
   screenshots:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+    # - name: Checkout
+    #   uses: actions/checkout@v4
+    #   with:
+    #     fetch-depth: 0
     - name: Take Screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
@@ -30,8 +30,12 @@ jobs:
       #   path: screenshot.png
     - name: Display structure of downloaded files
       run: ls -R
-    - name: Commit
-      uses: stefanzweifel/git-auto-commit-action@v5
+
+    # - name: Extract artifact
+    #   run: tar -xvf ./artifacts/my-artifact.tar -C ./extracted
+      
+    # - name: Commit
+    #   uses: stefanzweifel/git-auto-commit-action@v5
       # with:
       #   commit_message: Commit from screenshot workflow
       #   push_options: '--force'
