@@ -17,11 +17,17 @@ jobs:
     #   with:
     #     fetch-depth: 0
 
+    - name: Delete screenshot
+      run: rm -f screenshot.png
+
+    - name: Display structure of downloaded files again
+      run: ls -R
+
     - name: Take Screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
         url: https://semanticdata.github.io/bamboo/
-        output: screenshot-temp.png
+        output: screenshot.png
 
     # - name: Upload artifact
     #   uses: actions/upload-artifact@v4
@@ -34,23 +40,8 @@ jobs:
     - name: Display structure of downloaded files
       run: ls -R
 
-    # - name: Extract artifact
-    #   run: tar -xvf ./artifacts/my-artifact.tar -C ./extracted
-
-    - name: Extract artifact
-      run: cp screenshot-temp.png screenshot.png
-
-    - name: Commit
-      uses: stefanzweifel/git-auto-commit-action@v5
-      # with:
-      #   commit_message: Commit from screenshot workflow
-      #   push_options: '--force'
-      # uses: GuillaumeFalourd/git-commit-push@v1.3
-      # with:
-      #   commit_message: Commit from screenshot workflow
-      #   force: true
-      #   empty: true
-      #   files: screenshot.png
-
-    - name: Display structure of downloaded files again
-      run: ls -R
+    # - name: Commit
+    #   uses: stefanzweifel/git-auto-commit-action@v5
+    #   with:
+    #     commit_message: Commit from screenshot workflow
+    #     push_options: '--force'
