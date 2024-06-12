@@ -19,11 +19,9 @@ jobs:
         destination: screenshot.png
     - name: Upload artifact
       uses: actions/upload-artifact@v4
+      with:
+        path: screenshot.png
     - name: Download created artifact
       uses: actions/download-artifact@v4
     # - name: Copy Screenshot
     #   run: cp ${{ steps.screenshot.outputs.path }} .
-    # - name: Screenshot Action
-    #   uses: karol-brejna-i/webpage-screenshot-action@v1
-    #   with:
-    #     url: https://semanticdata.github.io/bamboo/
