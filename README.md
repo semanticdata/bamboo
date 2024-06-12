@@ -17,9 +17,9 @@ All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any 
 
 Bamboo CSS is very lightweight, only **5.3KB** (unzipped) and **1.9KB** (gzipped).
 
-[View demo](https://rilwis.github.io/bamboo/demo/).
-
-[Learn more why I create Bamboo CSS](https://deluxeblogtips.com/bamboo-css/).
+<a href="https://rilwis.github.io/bamboo/demo/">
+<img src="https://img.shields.io/badge/Check%20out%20the%20Demo-F0E68C?style=for-the-badge&link=https%3A%2F%2Fsemanticdata.github.io%2Fbamboo" />
+</a>
 
 ## ✨ Features
 
@@ -100,9 +100,7 @@ All CSS variables are prefixed with `--b-` so it's safe to use Bamboo CSS with y
 
 ## 💜 Acknowledgements
 
-This repository is a fork of [Bamboo CSS](https://github.com/rilwis/bamboo). Same as its predecesor [modern-normalize](https://github.com/sindresorhus/modern-normalize), and [sanitize.css](https://github.com/csstools/sanitize.css) are a source of inspiration.
-
-For color schemes we have the [Nord theme](https://www.nordtheme.com) as source.
+This repository is a fork of [Bamboo CSS](https://github.com/rilwis/bamboo). Same as its predecesor [modern-normalize](https://github.com/sindresorhus/modern-normalize), and [sanitize.css](https://github.com/csstools/sanitize.css) are a source of inspiration. For color schemes we have the [Nord theme](https://www.nordtheme.com) as source.
 
 ## © License
 
