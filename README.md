@@ -14,12 +14,8 @@ Bamboo CSS uses [modern-normalize](https://github.com/sindresorhus/modern-normal
 
 Bamboo CSS uses CSS variables for theming, allowing to dynamically change the theme if you want. By default, it provides 2 themes for light and dark modes. The theme is automatically switched based on the system mode.
 
-All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any CSS framework without conflicts.
-
-Bamboo CSS is very lightweight, only **5.3KB** (unzipped) and **1.9KB** (gzipped).
-
 <a href="https://semanticdata.github.io/bamboo">
-<img src="https://img.shields.io/badge/Check out the Demo-F0E68C?style=for-the-badge&link=https://semanticdata.github.io/bamboo" />
+<img src="https://img.shields.io/badge/Check out the Demo-F0E68C?style=for-the-badge&link=https://semanticdata.github.io/bamboo" alt="demo"; />
 </a>
 
 ## 🖼 Screenshots
@@ -37,7 +33,7 @@ Bamboo CSS is very lightweight, only **5.3KB** (unzipped) and **1.9KB** (gzipped
 - Consistent styling across browsers thanks to `modern-normalize` and `sanitize.css`
 - Responsive
 - Supports light and dark themes (automatically detect the OS mode and switch)
-- Uses CSS variables (scoped with prefix `--b-`)
+- Uses CSS variables (scoped with prefix `--b-`)[^1]
 - Uses `rem`
 - Compatible with other CSS frameworks
 - Lightweight (**5.3KB** (unzipped) and **1.9KB** (gzipped).)
@@ -142,3 +138,5 @@ This repository is a fork of [Bamboo CSS](https://github.com/rilwis/bamboo). Sam
 ## © License
 
 Source code in this repository is available under the [MIT License](LICENSE).
+
+[^1]: All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any CSS framework without conflicts.
