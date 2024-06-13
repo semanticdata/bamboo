@@ -21,11 +21,11 @@ jobs:
           plugin_screenshot: yes
           plugin_screenshot_title: Screenshot - Bamboo CSS
           plugin_screenshot_url: https://semanticdata.github.io/bamboo/readme.html
-          plugin_screenshot_selector: body # default
-          plugin_screenshot_background: no # changed
-          plugin_screenshot_wait:        0 # default
+          plugin_screenshot_selector: body
+          plugin_screenshot_background: yes
+          plugin_screenshot_wait: 0
           plugin_screenshot_viewport: |
             {
-              "width": 1280,
-              "height": 960
+            "width": 1280,
+            "height": 960
             }
