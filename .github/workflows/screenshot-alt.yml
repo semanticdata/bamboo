@@ -22,7 +22,7 @@ jobs:
     - name: Take site screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
-        url: https://semanticdata.github.io/nullboard
+        url: https://semanticdata.github.io/bamboo/
         mode: page
         output: screenshot.png
     - name: Commit new screenshot
