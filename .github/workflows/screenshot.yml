@@ -28,7 +28,7 @@ jobs:
       - name: screenshots-ci-action
         uses: flameddd/screenshots-ci-action@master
         with:
-          url: https://semanticdata.github.io/bamboo/readme.html
+          url: https://semanticdata.github.io/bamboo/
           type: png
           noCommitHashFileName: true
           # fullPage: true
