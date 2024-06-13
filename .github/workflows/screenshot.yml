@@ -15,11 +15,11 @@ jobs:
         uses: actions/checkout@v4
       # - name: Display structure of downloaded files
       #   run: ls -R
-      - name: Remove previous screenshot
+      - name: Remove old screenshots directory
         run: rm -rf screenshots
       # - name: Display structure of downloaded files
       #   run: ls -R
-      - name: Commit changes
+      - name: Commit removal
         uses: stefanzweifel/git-auto-commit-action@v5
       - name: Install puppeteer-headful
         uses: mujo-code/puppeteer-headful@master
@@ -31,7 +31,7 @@ jobs:
           url: https://semanticdata.github.io/bamboo/readme.html
           type: png
           noCommitHashFileName: true
-          fullPage: true
+          # fullPage: true
           # noDesktop: true
           # devices: iPhone 6,iPhone 6 landscape,iPad Pro landscape
       # - name: Display structure of downloaded files
