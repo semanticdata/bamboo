@@ -1,10 +1,11 @@
-# Bamboo CSS
+# 🥢 Bamboo CSS
 
 <p>
 <img src="https://img.shields.io/github/languages/code-size/semanticdata/bamboo" />
 <img src="https://img.shields.io/github/repo-size/semanticdata/bamboo" />
 <img src="https://img.shields.io/github/commit-activity/t/semanticdata/bamboo" />
 <img src="https://img.shields.io/github/last-commit/semanticdata/bamboo" />
+<img src="https://img.shields.io/website/https/semanticdata.github.io/bamboo.svg" />
 </p>
 
 A classless CSS library which adds nice default style for all HTML elements. It saves you a lot of time when you need to style HTML for your HTML/React/Vue demo on CodePen/CodeSandbox. It can also be used as a base style for your blog/website.
@@ -17,9 +18,18 @@ All CSS variables are prefixed with `--b-`, allowing to use Bamboo CSS with any 
 
 Bamboo CSS is very lightweight, only **5.3KB** (unzipped) and **1.9KB** (gzipped).
 
-<a href="https://rilwis.github.io/bamboo/demo/">
-<img src="https://img.shields.io/badge/Check%20out%20the%20Demo-F0E68C?style=for-the-badge&link=https%3A%2F%2Fsemanticdata.github.io%2Fbamboo" />
+<a href="https://semanticdata.github.io/bamboo">
+<img src="https://img.shields.io/badge/Check out the Demo-F0E68C?style=for-the-badge&link=https://semanticdata.github.io/bamboo" />
 </a>
+
+## 🖼 Screenshots
+
+<details>
+<summary>Expand</summary>
+ 
+| ![screenshot](screenshots/desktopPage960x720.png) |
+| --- |
+</details>
 
 ## ✨ Features
 
@@ -98,7 +108,29 @@ Bamboo CSS provides the following CSS variables for theming:
 
 All CSS variables are prefixed with `--b-` so it's safe to use Bamboo CSS with your existing websites.
 
-## 🔁 Changes from Upstream
+## 🔀 Workflows
+
+### Publish Demo 📢
+
+```yml
+name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "demo"
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+```
+
+## 🔄 Changes from Upstream
 
 - Added new *scripts* within [package.json](package.json) to build the CSS files inside the `demo` folder.
 - Added [workflow](.github/workflows/) to deploy the site via GitHub Actions.
