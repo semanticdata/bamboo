@@ -22,10 +22,9 @@ jobs:
     - name: Take site screenshot
       uses: karol-brejna-i/webpage-screenshot-action@v1
       with:
-        url: https://semanticdata.github.io/bamboo/readme.html
+        url: https://semanticdata.github.io/nullboard
+        mode: page
         output: screenshot.png
-        # mode: element # scrollToElement, element, wholePage, page
-        # selector: body
     - name: Commit new screenshot
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
