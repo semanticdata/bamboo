@@ -22,7 +22,7 @@ Bamboo CSS uses CSS variables for theming, allowing to dynamically change the th
 
 <details>
 <summary>Expand</summary>
- 
+
 | ![screenshot](screenshots/desktopPage960x720.png) |
 | --- |
 </details>
@@ -125,6 +125,10 @@ name: github-pages
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+
+## TODO
+
+- [ ] Change project name
 
 ## 🔄 Changes from Upstream
 
