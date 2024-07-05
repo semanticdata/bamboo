@@ -128,7 +128,9 @@ name: github-pages
 
 ## TODO
 
-- [ ] Change project name
+- [ ] Change project name away from `Bamboo`.
+- [ ] Add automatic builds with [Husky](https://github.com/typicode/husky).
+- [ ] Integrate [New.css](https://github.com/semanticdata/bamboo/blob/main/new/new.css).
 
 ## 🔄 Changes from Upstream
 
