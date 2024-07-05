@@ -20,7 +20,7 @@ body {
 	word-break: break-word;
 	overflow-wrap: break-word; // Breaks words to prevent overflow in all browsers
 	-webkit-tap-highlight-color: transparent; // Remove the grey highlight on links in iOS.
-	-webkit-text-size-adjust: 100%;  // Prevent adjustments of font size after orientation changes in iOS.
+	-webkit-text-size-adjust: 100%; // Prevent adjustments of font size after orientation changes in iOS.
 }
 h1,
 h2,
@@ -69,10 +69,10 @@ h4 {
 	font-size: 1rem;
 }
 h5 {
-	font-size: .875rem;
+	font-size: 0.875rem;
 }
 h6 {
-	font-size: .75rem;
+	font-size: 0.75rem;
 }
 a {
 	color: var(--b-link);
@@ -108,11 +108,11 @@ strong {
 blockquote {
 	margin-left: 0;
 	margin-trim: block;
-	padding: .5rem 0 .5rem 1.5rem;
-	border-left: .25rem solid var(--b-txt);
+	padding: 0.5rem 0 0.5rem 1.5rem;
+	border-left: 0.25rem solid var(--b-txt);
 }
 small {
-	font-size: .875rem;
+	font-size: 0.875rem;
 }
 
 // Prevent `sub` and `sup` elements from affecting the line height in all browsers.
@@ -124,10 +124,10 @@ sup {
 	vertical-align: baseline;
 }
 sub {
-	bottom: -.25em;
+	bottom: -0.25em;
 }
 sup {
-	top: -.5em;
+	top: -0.5em;
 }
 
 hr {
@@ -144,10 +144,10 @@ samp,
 tt,
 var {
 	background: var(--b-bg-2);
-	border-radius: .25rem;
-	padding: .125rem .25rem;
+	border-radius: 0.25rem;
+	padding: 0.125rem 0.25rem;
 	font-family: var(--b-font-mono);
-	font-size: .875em;
+	font-size: 0.875em;
 }
 pre {
 	padding: 1rem;
@@ -161,10 +161,10 @@ pre code {
 // Details.
 details {
 	display: block;
-	padding: .5rem 1rem;
+	padding: 0.5rem 1rem;
 	background: var(--b-bg-2);
 	border: 1px solid var(--b-line);
-	border-radius: .25rem;
+	border-radius: 0.25rem;
 	margin-trim: block;
 }
 details[open] > summary {
@@ -186,14 +186,14 @@ table {
 	text-indent: 0; // Remove text indentation from table contents in Chrome and Safari.
 }
 table caption {
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 tr {
 	border-bottom: 1px solid var(--b-line);
 }
 td,
 th {
-	padding: .5rem 0 .5rem 1rem;
+	padding: 0.5rem 0 0.5rem 1rem;
 	word-break: normal;
 
 	&:first-child {
@@ -218,28 +218,28 @@ li > ol {
 
 // Forms.
 fieldset {
-	padding: .5rem .75rem;
+	padding: 0.5rem 0.75rem;
 	border: 1px solid var(--b-line);
-	border-radius: .25rem;
+	border-radius: 0.25rem;
 }
 legend {
-	padding: 0 .25rem;
+	padding: 0 0.25rem;
 }
 label {
 	cursor: pointer;
 	display: block;
-	margin-bottom: .25rem;
+	margin-bottom: 0.25rem;
 }
 button,
 input,
 select,
 textarea {
 	margin: 0;
-	padding: .5rem .75rem;
+	padding: 0.5rem 0.75rem;
 	max-width: 100%;
 	background: var(--b-bg-2);
 	border: 0;
-	border-radius: .25rem;
+	border-radius: 0.25rem;
 	font: inherit;
 	line-height: 1.125;
 	color: var(--b-txt);
@@ -276,7 +276,7 @@ select,
 select:not([multiple]):not([size]) {
 	padding-right: 1.5rem;
 	background-repeat: no-repeat;
-	background-position: right .5rem center;
+	background-position: right 0.5rem center;
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
@@ -291,7 +291,7 @@ textarea:not([rows]) {
 
 // Disable double click to zoom in iOS.
 button {
-    touch-action: manipulation;
+	touch-action: manipulation;
 }
 button,
 [type="button"],
@@ -305,19 +305,19 @@ button,
 	color: var(--b-btn-txt);
 	border: 0;
 	cursor: pointer;
-	transition: opacity .25s;
+	transition: opacity 0.25s;
 }
 button:hover,
 [type="button"]:hover,
 [type="submit"]:hover,
 [type="reset"]:hover {
-	opacity: .75;
+	opacity: 0.75;
 }
 button[disabled],
 [type="button"][disabled],
 [type="submit"][disabled],
 [type="reset"][disabled] {
-	opacity: .5;
+	opacity: 0.5;
 }
 
 // Add the correct vertical alignment in Chrome and Firefox.
@@ -341,7 +341,7 @@ progress {
 // Correct the text style of placeholders in Chrome, Edge, and Safari.
 ::-webkit-input-placeholder {
 	color: inherit;
-	opacity: .5;
+	opacity: 0.5;
 }
 
 // Remove the inner padding in Chrome and Safari on macOS.
